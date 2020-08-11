@@ -1,0 +1,51 @@
+#nav {
+  width: 20%;
+  height: 100vh;
+  background-color: var(--color-secondary);
+  @include flexbox(column);
+  align-items: stretch;
+  justify-content: center;
+
+  h1 {
+    flex-basis: 20%;
+    text-align: center;
+    font-size: 3rem;
+    @include flexbox;
+    margin-bottom: 8rem;
+  }
+
+  .nav-menu {
+    flex-basis: 80%;
+    text-align: start;
+    padding: 0 3rem;
+    list-style: none;
+    font-size: 2.5rem;
+
+    li {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+      p {
+        display: block;
+        color: black;
+        padding: 1.5rem 0;
+        transition: 0.25s;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateX(1rem);
+          color: var(--red);
+        }
+
+        &:hover img {
+          opacity: 0;
+        }
+
+        img {
+          width: 20px;
+          margin-right: 1rem;
+          color: red;
+          transition: 0.25s;
+        }
+      }
+    }
+  }
+}

@@ -1,17 +1,18 @@
 #nav {
   width: 20%;
   height: 100vh;
-  background-color: var(--color-secondary);
+  background-color: var(--dark-1);
   @include flexbox(column);
   align-items: stretch;
   justify-content: center;
 
-  h1 {
-    flex-basis: 20%;
-    text-align: center;
-    font-size: 3rem;
-    @include flexbox;
+  .logo {
+    display: block;
+    margin: 0 auto;
     margin-bottom: 8rem;
+    margin-top: 5rem;
+    height: 200px;
+    width: 200px;
   }
 
   .nav-menu {
@@ -33,12 +34,12 @@
         cursor: pointer;
 
         &:hover {
-          transform: translateX(1rem);
-          color: var(--font-secondary);
+          transform: translateX(2rem);
+          color: var(--green);
         }
 
         &:hover .nav-icon {
-          color: var(--font-secondary);
+          color: var(--green);
         }
 
         .nav-icon {
@@ -53,6 +54,6 @@
 }
 
 #nav .nav-menu .active-nav {
-  color: var(--font-secondary);
-  transform: translateX(1rem);
+  color: var(--green);
+  transform: translateX(2rem);
 }

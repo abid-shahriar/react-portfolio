@@ -1,4 +1,5 @@
 import React from "react";
+import allIsWell from "../../asset/png/all-is-well.png";
 // import homeSvg from "../../asset/svgs/home.svg";
 // import aboutSvg from "../../asset/svgs/about.svg";
 // import serviceSvg from "../../asset/svgs/service.svg";
@@ -12,7 +13,7 @@ function Nav({ setSection, section }) {
   };
   return (
     <nav id="nav">
-      <h1 className="title">Hello there..!!</h1>
+      <img src={allIsWell} alt="all is well" className="logo" />
       <ul className="nav-menu">
         <li className="menu-item">
           <a

@@ -7,10 +7,11 @@
 }
 
 :root {
-  --color-primary: #f2f2fc;
-  --color-secondary: #fdf9ff;
-  --font-primary: #1f1f1f;
-  --font-secondary: rgb(18, 156, 0);
+  --dark-1: #35363a;
+  --dark-2: #262728;
+  --white: #f0f0f0;
+  --white-light-1: #dedede;
+  --green: rgb(18, 156, 0);
   --sayan: rgb(112, 112, 112);
 }
 
@@ -20,13 +21,15 @@ html {
 
 body {
   overflow-x: hidden;
-  color: var(--font-primary);
+  color: var(--white-light-1);
+  background-color: #0e0e0e;
+  font-family: "Roboto Slab", serif;
 }
 
 #root {
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0 auto;
-  background-color: var(--color-primary);
+  background-color: var(--dark-2);
   @include flexbox;
   flex-wrap: wrap;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
@@ -34,9 +37,12 @@ body {
 }
 
 .section {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   min-height: 100vh;
-  @include flexbox;
-  animation: sectionChange 0.5s ease-in;
-  font-size: 40px;
+  animation: sectionChange 1s ease-in-out;
+}
+
+.section-wrapper {
+  padding: 5rem 0;
 }

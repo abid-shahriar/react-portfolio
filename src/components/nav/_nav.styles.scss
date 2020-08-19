@@ -23,29 +23,36 @@
 
     li {
       border-bottom: 1px solid rgba(0, 0, 0, 0.144);
-      p {
+
+      a {
+        text-decoration: none;
         display: block;
-        color: black;
+        color: var(--font-primary);
         padding: 1.5rem 0;
         transition: 0.25s;
         cursor: pointer;
 
         &:hover {
           transform: translateX(1rem);
-          color: var(--red);
+          color: var(--font-secondary);
         }
 
-        &:hover img {
-          opacity: 0;
+        &:hover .nav-icon {
+          color: var(--font-secondary);
         }
 
-        img {
+        .nav-icon {
           width: 20px;
-          margin-right: 1rem;
-          color: red;
+          height: 20px;
+          margin-right: 2.5rem;
           transition: 0.25s;
         }
       }
     }
   }
+}
+
+#nav .nav-menu .active-nav {
+  color: var(--font-secondary);
+  transform: translateX(1rem);
 }

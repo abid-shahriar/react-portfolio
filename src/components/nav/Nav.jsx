@@ -1,12 +1,12 @@
 import React from "react";
-import homeSvg from "../../asset/svgs/home.svg";
-import aboutSvg from "../../asset/svgs/about.svg";
-import serviceSvg from "../../asset/svgs/service.svg";
-import portfolioSvg from "../../asset/svgs/portfolio.svg";
-import blogSvg from "../../asset/svgs/blog.svg";
-import contactSvg from "../../asset/svgs/contact.svg";
+// import homeSvg from "../../asset/svgs/home.svg";
+// import aboutSvg from "../../asset/svgs/about.svg";
+// import serviceSvg from "../../asset/svgs/service.svg";
+// import portfolioSvg from "../../asset/svgs/portfolio.svg";
+// import blogSvg from "../../asset/svgs/blog.svg";
+// import contactSvg from "../../asset/svgs/contact.svg";
 
-function Nav({ setSection }) {
+function Nav({ setSection, section }) {
   const activeSection = (name) => {
     setSection(name);
   };
@@ -15,64 +15,82 @@ function Nav({ setSection }) {
       <h1 className="title">Hello there..!!</h1>
       <ul className="nav-menu">
         <li className="menu-item">
-          <p
-            onClick={() => {
+          <a
+            className={section === "home" || section === "" ? "active-nav" : ""}
+            href="#home"
+            onClick={(e) => {
+              e.preventDefault();
               activeSection("home");
             }}
           >
-            <img src={homeSvg} alt="Home Logo" />
+            <i className="nav-icon fas fa-home"></i>
             Home
-          </p>
+          </a>
         </li>
         <li className="menu-item">
-          <p
-            onClick={() => {
+          <a
+            className={section === "about" ? "active-nav" : ""}
+            href="#about"
+            onClick={(e) => {
+              e.preventDefault();
               activeSection("about");
             }}
           >
-            <img src={aboutSvg} alt="" />
+            <i className="nav-icon fas fa-user-alt"></i>
             About
-          </p>
+          </a>
         </li>
         <li className="menu-item">
-          <p
-            onClick={() => {
+          <a
+            className={section === "service" ? "active-nav" : ""}
+            href="#service"
+            onClick={(e) => {
+              e.preventDefault();
               activeSection("service");
             }}
           >
-            <img src={serviceSvg} alt="" />
+            <i className="nav-icon fas fa-cogs"></i>
             Service
-          </p>
+          </a>
         </li>
         <li className="menu-item">
-          <p
-            onClick={() => {
+          <a
+            className={section === "portfolio" ? "active-nav" : ""}
+            href="#portfolio"
+            onClick={(e) => {
+              e.preventDefault();
               activeSection("portfolio");
             }}
           >
-            <img src={portfolioSvg} alt="" />
+            <i className="nav-icon fas fa-briefcase"></i>
             Portfolio
-          </p>
+          </a>
         </li>
         <li className="menu-item">
-          <p
-            onClick={() => {
+          <a
+            className={section === "blog" ? "active-nav" : ""}
+            href="#blog"
+            onClick={(e) => {
+              e.preventDefault();
               activeSection("blog");
             }}
           >
-            <img src={blogSvg} alt="" />
+            <i className="nav-icon fas fa-comment-dots"></i>
             Blog
-          </p>
+          </a>
         </li>
         <li className="menu-item">
-          <p
-            onClick={() => {
+          <a
+            className={section === "contact" ? "active-nav" : ""}
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
               activeSection("contact");
             }}
           >
-            <img src={contactSvg} alt="" />
+            <i className="nav-icon fas fa-id-card"></i>
             Contact
-          </p>
+          </a>
         </li>
       </ul>
     </nav>

@@ -1,0 +1,64 @@
+.home {
+  @include flexbox(column);
+  &__img {
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 3rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border: 1rem solid rgba(18, 156, 0, 0.5);
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__desc {
+    max-width: 60%;
+
+    h3 {
+      font-size: 3rem;
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+
+  &__social-links {
+    margin-top: 3rem;
+    @include flexbox;
+
+    a {
+      @include flexbox;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      height: 60px;
+      width: 60px;
+      background-color: var(--font-secondary);
+      border-radius: 50%;
+      transition: 0.25s;
+
+      &:hover {
+        transform: scale(1.15);
+        background-color: black;
+      }
+
+      &:hover i {
+        color: var(--font-secondary);
+      }
+
+      i {
+        transform: scale(0.8);
+        color: white;
+        transition: 0.25s;
+      }
+    }
+  }
+}

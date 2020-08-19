@@ -7,9 +7,11 @@
 }
 
 :root {
-  --color-primary: rgb(220, 220, 240);
-  --color-secondary: rgb(221, 221, 221);
-  --red: #ec1839;
+  --color-primary: #f2f2fc;
+  --color-secondary: #fdf9ff;
+  --font-primary: #1f1f1f;
+  --font-secondary: rgb(18, 156, 0);
+  --sayan: rgb(112, 112, 112);
 }
 
 html {
@@ -18,11 +20,17 @@ html {
 
 body {
   overflow-x: hidden;
+  color: var(--font-primary);
 }
 
 #root {
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: var(--color-primary);
   @include flexbox;
+  flex-wrap: wrap;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
 }
 
 .section {

@@ -6,13 +6,19 @@
   align-items: stretch;
   justify-content: center;
 
-  .logo {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 8rem;
-    margin-top: 5rem;
-    height: 200px;
-    width: 200px;
+  .logo-wrapper {
+    position: relative;
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 8rem;
+      margin-top: 5rem;
+      height: 200px;
+      width: 200px;
+      position: relative;
+      z-index: 10;
+    }
   }
 
   .nav-menu {
@@ -34,7 +40,6 @@
         cursor: pointer;
 
         &:hover {
-          transform: translateX(2rem);
           color: var(--green);
         }
 

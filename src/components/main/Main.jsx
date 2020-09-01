@@ -6,30 +6,19 @@ import Contact from "../sections/Contact";
 import Portfolio from "../sections/Portfolio";
 import Service from "../sections/Service";
 
-function Main({ section }) {
-  const renderSection = () => {
-    switch (section) {
-      case "about":
-        return <About />;
+import { Route } from "react-router-dom";
 
-      case "blog":
-        return <Blog />;
-
-      case "contact":
-        return <Contact />;
-
-      case "portfolio":
-        return <Portfolio />;
-
-      case "service":
-        return <Service />;
-
-      default:
-        return <Home />;
-    }
-  };
-
-  return <main id="main">{renderSection()}</main>;
+function Main() {
+  return (
+    <main id="main">
+      <Route path="/" exact component={Home} />
+      <Route path="/about" exact component={About} />
+      <Route path="/blog" exact component={Blog} />
+      <Route path="/contact" exact component={Contact} />
+      <Route path="/portfolio" exact component={Portfolio} />
+      <Route path="/service" exact component={Service} />
+    </main>
+  );
 }
 
 export default Main;

@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
 import Nav from "./components/nav/Nav";
 import Main from "./components/main/Main";
 
 function App() {
-  const [section, setSection] = useState("");
   return (
-    <>
-      <Nav setSection={setSection} section={section} />
-      <Main section={section} />
-    </>
+    <BrowserRouter>
+      <Nav />
+      <Main />
+    </BrowserRouter>
   );
 }
 

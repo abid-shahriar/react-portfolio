@@ -1,101 +1,70 @@
 import React from "react";
 import allIsWell from "../../asset/png/all-is-well.png";
-// import homeSvg from "../../asset/svgs/home.svg";
-// import aboutSvg from "../../asset/svgs/about.svg";
-// import serviceSvg from "../../asset/svgs/service.svg";
-// import portfolioSvg from "../../asset/svgs/portfolio.svg";
-// import blogSvg from "../../asset/svgs/blog.svg";
-// import contactSvg from "../../asset/svgs/contact.svg";
+import { Link, withRouter } from "react-router-dom";
 
-function Nav({ setSection, section }) {
-  const activeSection = (name) => {
-    setSection(name);
-  };
+function Nav(props) {
+  let locationPath = props.location.pathname;
+
+  const navItems = [
+    {
+      id: 1,
+      name: "home",
+      icon: "nav-icon fas fa-home",
+      to: "/",
+    },
+    {
+      id: 2,
+      name: "about",
+      icon: "nav-icon fas fa-user-alt",
+      to: "/about",
+    },
+    {
+      id: 3,
+      name: "service",
+      icon: "nav-icon fas fa-cogs",
+      to: "/service",
+    },
+    {
+      id: 4,
+      name: "portfolio",
+      icon: "nav-icon fas fa-briefcase",
+      to: "/portfolio",
+    },
+    {
+      id: 5,
+      name: "blog",
+      icon: "nav-icon fas fa-comment-dots",
+      to: "/blog",
+    },
+    {
+      id: 6,
+      name: "contact",
+      icon: "nav-icon fas fa-id-card",
+      to: "/contact",
+    },
+  ];
+
   return (
     <nav id="nav">
-      <img src={allIsWell} alt="all is well" className="logo" />
+      <div className="logo-wrapper">
+        <img src={allIsWell} alt="all is well" className="logo" />
+      </div>
+
       <ul className="nav-menu">
-        <li className="menu-item">
-          <a
-            className={section === "home" || section === "" ? "active-nav" : ""}
-            href="#home"
-            onClick={(e) => {
-              e.preventDefault();
-              activeSection("home");
-            }}
-          >
-            <i className="nav-icon fas fa-home"></i>
-            Home
-          </a>
-        </li>
-        <li className="menu-item">
-          <a
-            className={section === "about" ? "active-nav" : ""}
-            href="#about"
-            onClick={(e) => {
-              e.preventDefault();
-              activeSection("about");
-            }}
-          >
-            <i className="nav-icon fas fa-user-alt"></i>
-            About
-          </a>
-        </li>
-        <li className="menu-item">
-          <a
-            className={section === "service" ? "active-nav" : ""}
-            href="#service"
-            onClick={(e) => {
-              e.preventDefault();
-              activeSection("service");
-            }}
-          >
-            <i className="nav-icon fas fa-cogs"></i>
-            Service
-          </a>
-        </li>
-        <li className="menu-item">
-          <a
-            className={section === "portfolio" ? "active-nav" : ""}
-            href="#portfolio"
-            onClick={(e) => {
-              e.preventDefault();
-              activeSection("portfolio");
-            }}
-          >
-            <i className="nav-icon fas fa-briefcase"></i>
-            Portfolio
-          </a>
-        </li>
-        <li className="menu-item">
-          <a
-            className={section === "blog" ? "active-nav" : ""}
-            href="#blog"
-            onClick={(e) => {
-              e.preventDefault();
-              activeSection("blog");
-            }}
-          >
-            <i className="nav-icon fas fa-comment-dots"></i>
-            Blog
-          </a>
-        </li>
-        <li className="menu-item">
-          <a
-            className={section === "contact" ? "active-nav" : ""}
-            href="#contact"
-            onClick={(e) => {
-              e.preventDefault();
-              activeSection("contact");
-            }}
-          >
-            <i className="nav-icon fas fa-id-card"></i>
-            Contact
-          </a>
-        </li>
+        {navItems.map((item) => (
+          <li key={item.id}>
+            <Link
+              to={item.to}
+              className={locationPath === item.to ? "active-nav" : ""}
+            >
+              <i className={item.icon}></i>
+              {item.name}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );
 }
 
-export default Nav;
+export default withRouter(Nav);

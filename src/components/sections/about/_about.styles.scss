@@ -7,31 +7,8 @@
     // align-items: flex-start;
     flex-direction: row-reverse;
   }
-  &__section-name {
-    margin-bottom: 3rem;
-    h1 {
-      font-size: 4rem;
-      margin-bottom: 1rem;
-    }
-    span {
-      background-color: var(--green);
-      height: 5px;
-      display: block;
-      margin-bottom: 8px;
-      border-radius: 50px;
-
-      &:nth-child(2) {
-        width: 100px;
-      }
-
-      &:last-child {
-        width: 50px;
-      }
-    }
-  }
 
   &__info {
-    word-spacing: 3px;
     color: var(--white);
     padding: 2rem;
     border-radius: 5px;
@@ -93,11 +70,16 @@
 
     .years {
       &:not(:last-child) {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
+      }
+
+      &:last-child {
+        padding-bottom: 2rem;
       }
       h4 {
         font-weight: 200;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        color: var(--white);
 
         &::before {
           content: "";
@@ -114,6 +96,7 @@
         font-size: 1.8rem;
         font-weight: 400;
         margin-bottom: 0.5rem;
+        color: var(--white);
       }
       p {
         font-size: 1.5rem;

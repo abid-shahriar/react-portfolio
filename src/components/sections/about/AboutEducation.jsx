@@ -32,10 +32,9 @@ function AboutEducation() {
           </h3>
           <p>
             Having my HSC Certificate, I took admissin in Bangabandhu Sheikh
-            Mujibur Rahman Science & Technology University, Gopalganj. I got
-            Political Science there. But I did not like the subject and the
-            subject does not go with my goals so I dropped out from the versity
-            after four months.
+            Mujibur Rahman Science & Technology University, Gopalganj. But I did
+            not like the subject and the subject does not go with my goals so I
+            dropped out from the versity after four months.
           </p>
         </div>
         <div className="drop-out years">

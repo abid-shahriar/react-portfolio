@@ -1,0 +1,24 @@
+[class*="__title"] {
+  margin-bottom: 3rem;
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+  span {
+    background-color: var(--green);
+    height: 5px;
+    display: block;
+    margin-bottom: 8px;
+    border-radius: 50px;
+
+    &:nth-child(2) {
+      width: 100px;
+    }
+
+    &:last-child {
+      width: 50px;
+    }
+  }
+}

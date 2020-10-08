@@ -8,12 +8,13 @@
     &::before {
       content: "";
       position: absolute;
-      height: 100%;
-      width: 100%;
-      border: 1rem solid var(--green);
-      border-radius: 49%;
-      top: 0;
-      left: 0;
+      height: 110%;
+      width: 110%;
+      // border: 1rem solid var(--green);
+      top: -6%;
+      left: -5%;
+      @include boxshadow;
+      border-radius: 50%;
     }
 
     img {
@@ -23,6 +24,8 @@
 
   &__desc {
     max-width: 60%;
+    @include boxshadow;
+    padding: 2rem;
 
     h3 {
       font-size: 3rem;
@@ -33,6 +36,8 @@
 
   &__social-links {
     margin-top: 3rem;
+    @include boxshadow;
+    padding: 2rem;
     @include flexbox;
 
     a {

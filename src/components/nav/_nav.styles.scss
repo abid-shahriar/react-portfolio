@@ -29,7 +29,13 @@
     font-size: 2.5rem;
 
     li {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+      @include boxshadow2;
+      padding: 0 2rem;
+      border-radius: 10px;
+      transition: 0.3s;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
 
       a {
         text-decoration: none;
@@ -38,6 +44,7 @@
         padding: 1.5rem 0;
         transition: 0.25s;
         cursor: pointer;
+        text-transform: capitalize;
 
         &:hover {
           color: var(--green);
@@ -58,7 +65,10 @@
   }
 }
 
-#nav .nav-menu .active-nav {
-  color: var(--green);
-  transform: translateX(2rem);
+#nav li.active-nav {
+  @include boxshadow;
+
+  a {
+    color: var(--green);
+  }
 }

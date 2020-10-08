@@ -1,10 +1,10 @@
 import React from "react";
-import About from "../sections/About";
-import Home from "../sections/Home";
-import Blog from "../sections/Blog";
-import Contact from "../sections/Contact";
-import Portfolio from "../sections/Portfolio";
-import Service from "../sections/Service";
+import About from "../sections/about/About";
+import Home from "../sections/home/Home";
+import Blogs from "../sections/blogs/Blogs";
+import Contact from "../sections/contact/Contact";
+import Projects from "../sections/projects/Projects";
+import Skills from "../sections/skills/Skills";
 
 import { Route } from "react-router-dom";
 
@@ -13,10 +13,10 @@ function Main() {
     <main id="main">
       <Route path="/" exact component={Home} />
       <Route path="/about" exact component={About} />
-      <Route path="/blog" exact component={Blog} />
+      <Route path="/blogs" exact component={Blogs} />
       <Route path="/contact" exact component={Contact} />
-      <Route path="/portfolio" exact component={Portfolio} />
-      <Route path="/service" exact component={Service} />
+      <Route path="/projects" exact component={Projects} />
+      <Route path="/skills" exact component={Skills} />
     </main>
   );
 }

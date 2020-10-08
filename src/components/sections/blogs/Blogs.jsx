@@ -1,7 +1,7 @@
 import React from "react";
 
-function Blog() {
+function Blogs() {
   return <div className="section">Blog Page</div>;
 }
 
-export default Blog;
+export default Blogs;

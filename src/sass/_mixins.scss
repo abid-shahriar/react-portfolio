@@ -4,3 +4,14 @@
   justify-content: center;
   flex-direction: $direction;
 }
+
+@mixin boxshadow {
+  box-shadow: inset -2.5px 2.5px 1px 0px rgba(darken(#1f222b, 15%), 0.4),
+    inset 3px -3px 2px 0px rgba(darken(#1f222b, 5%), 0.1),
+    -1px 1px 3px 0px rgba(lighten(#1f222b, 15%), 0.5);
+  border-radius: 10px;
+}
+
+@mixin boxshadow2 {
+  box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.2), 3px 3px 5px rgba(0, 0, 0, 0.2);
+}

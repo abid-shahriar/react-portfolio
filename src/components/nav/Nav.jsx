@@ -20,21 +20,21 @@ function Nav(props) {
     },
     {
       id: 3,
-      name: "service",
+      name: "skills",
       icon: "nav-icon fas fa-cogs",
-      to: "/service",
+      to: "/skills",
     },
     {
       id: 4,
-      name: "portfolio",
+      name: "projects",
       icon: "nav-icon fas fa-briefcase",
-      to: "/portfolio",
+      to: "/projects",
     },
     {
       id: 5,
-      name: "blog",
+      name: "blogs",
       icon: "nav-icon fas fa-comment-dots",
-      to: "/blog",
+      to: "/blogs",
     },
     {
       id: 6,
@@ -52,11 +52,11 @@ function Nav(props) {
 
       <ul className="nav-menu">
         {navItems.map((item) => (
-          <li key={item.id}>
-            <Link
-              to={item.to}
-              className={locationPath === item.to ? "active-nav" : ""}
-            >
+          <li
+            className={locationPath === item.to ? "active-nav" : ""}
+            key={item.id}
+          >
+            <Link to={item.to}>
               <i className={item.icon}></i>
               {item.name}
             </Link>

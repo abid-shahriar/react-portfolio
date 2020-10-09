@@ -24,6 +24,7 @@ body {
   color: var(--white-light-1);
   background-color: #0e0e0e;
   font-family: "Roboto Slab", serif;
+  scroll-behavior: smooth;
 }
 
 #root {
@@ -34,28 +35,4 @@ body {
   flex-wrap: wrap;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   overflow-x: hidden;
-}
-
-.section {
-  width: 90%;
-  margin: 0 auto;
-  min-height: 100vh;
-  animation: sectionChange 1s ease-in-out;
-}
-
-.section-wrapper {
-  padding: 5rem 0;
-}
-
-p {
-  font-family: "Nunito", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--white) !important;
 }

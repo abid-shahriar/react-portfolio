@@ -22,3 +22,27 @@
     }
   }
 }
+
+.section {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  animation: sectionChange 1s ease-in-out;
+}
+
+.section-wrapper {
+  padding: 5rem 0;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--white) !important;
+}

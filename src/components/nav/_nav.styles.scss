@@ -42,23 +42,25 @@
         display: block;
         color: var(--font-primary);
         padding: 1.5rem 0;
-        transition: 0.25s;
+        transition: 0.1s;
         cursor: pointer;
         text-transform: capitalize;
 
         &:hover {
           color: var(--green);
+          transition: 0.25s;
         }
 
         &:hover .nav-icon {
           color: var(--green);
+          transition: 0.25s;
         }
 
         .nav-icon {
           width: 20px;
           height: 20px;
           margin-right: 2.5rem;
-          transition: 0.25s;
+          transition: 0.1s;
         }
       }
     }
@@ -70,5 +72,6 @@
 
   a {
     color: var(--green);
+    transition: 0.1s;
   }
 }

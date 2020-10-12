@@ -28,6 +28,10 @@
   margin: 0 auto;
   min-height: 100vh;
   animation: sectionChange 1s ease-in-out;
+
+  @media (max-width: 900px) {
+    padding-left: 20px;
+  }
 }
 
 .section-wrapper {

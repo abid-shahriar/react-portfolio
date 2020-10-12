@@ -5,12 +5,16 @@
     position: relative;
     margin-bottom: 3rem;
 
+    @media (max-width:1100px){
+      transform: scale(.8);
+      margin-bottom: 1rem;
+    }
+
     &::before {
       content: "";
       position: absolute;
       height: 110%;
       width: 110%;
-      // border: 1rem solid var(--green);
       top: -6%;
       left: -5%;
       @include boxshadow;
@@ -23,12 +27,12 @@
   }
 
   &__desc {
-    max-width: 60%;
+    max-width: 80%;
     @include boxshadow;
     padding: 2rem;
 
     h3 {
-      font-size: 3rem;
+      font-size: clamp(2rem, 2.5vw, 3rem);
       text-align: center;
       font-weight: 300;
     }
@@ -40,6 +44,8 @@
     padding: 2rem;
     @include flexbox;
 
+    
+
     a {
       @include flexbox;
       margin: 0 0.5rem;
@@ -49,6 +55,11 @@
       background-color: var(--green);
       border-radius: 50%;
       transition: 0.25s;
+
+      @media (max-width:1100px) {
+        height: 50px;
+        width: 50px;
+      }
 
       &:hover {
         transform: scale(1.15);
@@ -64,6 +75,10 @@
         font-size: 3rem;
         color: white;
         transition: 0.25s;
+
+        @media (max-width:1100px) {
+          font-size: 2rem;
+        }
       }
     }
   }

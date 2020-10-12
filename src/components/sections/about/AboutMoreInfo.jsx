@@ -6,44 +6,45 @@ function AboutMoreInfo() {
     <div className="about__more-info-and-btns">
       <div className="about__more-info">
         <div className="birthday col">
-          <h3>
-            Birthday : <span>02 October</span>
-          </h3>
+          <p>
+            <span>Birthday : </span> <span> 02 October</span>
+          </p>
         </div>
         <div className="age col">
-          <h3>
-            Age: <span>20</span>
-          </h3>
+          <p>
+            <span> Age: </span> <span> 20</span>
+          </p>
         </div>
         <div className="website col">
-          <h3>
-            Website : <span>abidshahriar.netlify.app</span>
-          </h3>
-        </div>
-        <div className="email col">
-          <h3>
-            Email : <span>abidshahriar7@gmail.com</span>
-          </h3>
+          <p>
+            <span> Website : </span> <span> abidshahriar.me</span>
+          </p>
         </div>
         <div className="degree col">
-          <h3>
-            Degree : <span>Drou-out</span>
-          </h3>
+          <p>
+            <span>Degree : </span> <span> Drou-out</span>
+          </p>
         </div>
         <div className="phone col">
-          <h3>
-            Phone : <span>+8801726389558</span>
-          </h3>
+          <p>
+            <span>Phone : </span> <span> +8801726389558</span>
+          </p>
         </div>
+
         <div className="counrty col">
-          <h3>
-            Country : <span>Bangladesh</span>
-          </h3>
+          <p>
+            <span>Country : </span> <span> Bangladesh</span>
+          </p>
         </div>
         <div className="home-town col">
-          <h3>
-            Home Town : <span>Bogura Sadar, Bogura</span>
-          </h3>
+          <p>
+            <span>Home Town : </span> <span> Bogura</span>
+          </p>
+        </div>
+        <div className="email col">
+          <p>
+            <span>Email : </span> <span> abidshahriar7@gmail.com</span>
+          </p>
         </div>
       </div>
       <AboutButtons />

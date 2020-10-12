@@ -8,16 +8,16 @@ import Skills from "../sections/skills/Skills";
 
 import { Route } from "react-router-dom";
 
-function Main() {
+function Main(props) {
   return (
-    <main id="main">
+    <main id="main" >
       <Route path="/" exact component={Home} />
       <Route path="/about" exact component={About} />
       <Route path="/blogs" exact component={Blogs} />
       <Route path="/contact" exact component={Contact} />
       <Route path="/projects" exact component={Projects} />
       <Route path="/skills" exact component={Skills} />
-    </main>
+    </main >
   );
 }
 

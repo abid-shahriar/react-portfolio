@@ -6,6 +6,11 @@
     justify-content: space-between;
     // align-items: flex-start;
     flex-direction: row-reverse;
+
+    @media (max-width: 900px){
+      flex-direction: column-reverse;
+      justify-content: center;    
+    }
   }
 
   &__info {
@@ -13,15 +18,15 @@
     padding: 2rem;
     border-radius: 5px;
     @include boxshadow;
-
+    
     h2 {
-      font-size: 2.5rem;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
       font-weight: 400;
       margin-bottom: 0.5rem;
     }
 
     p {
-      font-size: 1.6rem;
+      font-size: clamp(1.4rem, 2.5vw, 1.6rem);
       font-weight: 200;
     }
   }
@@ -29,32 +34,73 @@
   &__more-info {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 2rem;
     border-radius: 5px;
     @include boxshadow;
 
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+
     .col {
-      flex-basis: 50%;
+      width: 50%;
       margin: 1rem 0;
 
-      h3 {
-        font-size: 1.6rem;
-        font-weight: 500;
+      
+
+      p{
+        display: flex;
+
+        @media (max-width: 1430px) {
+          flex-direction: column;
+        }
 
         span {
-          font-weight: 300;
-          padding-left: 1rem;
+          font-weight: 300;      
+        
+          &:nth-child(1) {
+            font-weight: 400;
+            font-family: "Roboto Slab", serif;
+            font-size: 1.4rem;
+          }
+
+          &:nth-child(2) {
+            padding-left: 5px;
+            font-size: 1.6rem;
+            
+            @media (max-width: 1430px) {
+              padding-left: 0px;
+            }
+
+            @media (max-width: 700px) {
+              font-size: 1.6rem;
+            }
+
+            @media (max-width: 700px) {
+              font-size: 1.2rem;
+            }
+          }
         }
       }
+
+      
     }
   }
 
   &__education {
-    width: 45%;
+    width: 48%;
     padding: 2rem;
     @include boxshadow;
+
+    @media (max-width: 1555px) {
+      width: 48%;
+    }
+
+    @media (max-width: 900px) {
+      width: 100%;
+    }
 
     .education-years {
       border-left: 4px solid var(--green);
@@ -66,6 +112,8 @@
       font-size: 2.5rem;
       margin-bottom: 2rem;
       font-weight: 400;
+
+      
     }
 
     .years {
@@ -80,6 +128,7 @@
         font-weight: 200;
         font-size: 1.6rem;
         color: var(--white);
+        
 
         &::before {
           content: "";
@@ -97,19 +146,35 @@
         font-weight: 400;
         margin-bottom: 0.5rem;
         color: var(--white);
+
+        @media (max-width:1400px ){
+          font-size: 1.6rem;
+        }
       }
       p {
         font-size: 1.5rem;
         font-weight: 300;
+        @media (max-width:1400px ){
+          font-size: 1.3rem;
+        }
       }
     }
   }
 
   &__more-info-and-btns {
-    width: 45%;
+    width: 48%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 1555px) {
+      width: 48%;
+    }
+
+    @media (max-width: 900px) {
+      width: 100%;
+      margin-top: 4rem;
+    }
   }
 
   &__btns {
@@ -117,20 +182,30 @@
     height: 60%;
     @include flexbox;
     justify-content: space-evenly;
-    @include boxshadow;
+    // @include boxshadow;
+    margin-top: 4rem;
 
     a {
       text-decoration: none;
       appearance: none;
       outline: none;
       background-color: transparent;
-      // border: 2px solid rgba(255, 255, 255, 0.3);
+      border: 2px solid rgba(255, 255, 255, 0.3);
       padding: 1.5rem 2.5rem;
       color: var(--white);
-      font-size: 1.8rem;
-      @include boxshadow3;
+      font-size: 1.6rem;
       border-radius: 50px;
       transition: 0.25s;
+
+      @media(max-width:1400px){
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+      }
+
+      @media(max-width:500px){
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+      }
 
       &:hover {
         background-color: var(--green);

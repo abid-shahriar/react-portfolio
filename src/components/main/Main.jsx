@@ -5,7 +5,6 @@ import Blogs from "../sections/blogs/Blogs";
 import Contact from "../sections/contact/Contact";
 import Projects from "../sections/projects/Projects";
 import Skills from "../sections/skills/Skills";
-
 import { Route } from "react-router-dom";
 
 function Main(props) {

@@ -1,10 +1,11 @@
 .skills {
+
   &__container {
     @include flexbox();
     flex-wrap: wrap;
     justify-content: space-between;
     & > div {
-      flex-basis: 30%;
+      flex-basis: 32%;
       margin-top: 4rem;
       min-height: 232px;
       @include flexbox(column);
@@ -12,10 +13,20 @@
       @include boxshadow;
       position: relative;
 
+      @media (max-width:900px){
+        flex-basis: 48%;
+      }
+
+      @media (max-width:600px){
+        flex-basis: 100%;
+        
+      }
+
       .icon {
         i {
           font-size: 7rem;
           margin-bottom: 1rem;
+          margin-top: 2rem;
           position: relative;
           opacity: 0.7;
           // transform: scale(1.5);
@@ -41,6 +52,14 @@
         font-size: 1.6rem;
         font-weight: 300;
         text-align: center;
+        
+        @media (max-width:900px){
+          text-align: left !important;    
+        }
+
+        @media (max-width:600px){
+          text-align: center !important;    
+        }
       }
     }
   }
@@ -78,7 +97,7 @@
   }
 }
 
-.javaScript {
+.js {
   i {
     color: yellow;
   }

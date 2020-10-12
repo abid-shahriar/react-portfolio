@@ -4,6 +4,7 @@ import AboutInfo from "./AboutInfo";
 import AboutMoreInfo from "./AboutMoreInfo";
 import Title from "../globals/Title";
 
+
 function About() {
   return (
     <div className="section about" id="about">

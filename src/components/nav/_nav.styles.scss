@@ -27,11 +27,15 @@
     z-index: 100;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(20px);
 
+    @supports not(backdrop-filter: blur()){
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+
     &.toggle{
-      width: 25px;
+      transform: translateX(-92%);
       overflow-y: hidden;
     }
 
@@ -39,10 +43,10 @@
       display: inline-block;
       position: absolute;
       top: 0;
-      right: 0;
+      right: 0px;
       height: 100%;
-      width: 25px;
-      background-color: black;
+      width: 30px;
+      // background-color: black;
       @include flexbox;
       font-size: 3rem;
       z-index: 101;

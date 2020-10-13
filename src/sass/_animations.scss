@@ -14,3 +14,14 @@
     opacity: 1;
   }
 }
+
+@keyframes toggleBtn {
+  0%,
+  100% {
+    transform: translateX(-2px);
+  }
+
+  50% {
+    transform: translateX(2px);
+  }
+}

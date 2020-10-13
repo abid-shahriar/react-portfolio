@@ -51,6 +51,7 @@
       font-size: 3rem;
       z-index: 101;
       cursor: pointer;
+      animation: toggleBtn 2s ease-in-out infinite backwards;
     }
   }
 

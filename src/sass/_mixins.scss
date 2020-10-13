@@ -10,6 +10,7 @@
     inset 3px -3px 2px 0px rgba(darken(#1f222b, 5%), 0.1),
     -1px 1px 3px 0px rgba(lighten(#1f222b, 15%), 0.5);
   border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 @mixin boxshadow2 {

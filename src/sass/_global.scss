@@ -6,9 +6,9 @@
     text-transform: capitalize;
     font-weight: 400;
 
-    @media (max-width:600px){
-      font-size: 3rem;     
-    }  
+    @media (max-width: 600px) {
+      font-size: 3rem;
+    }
   }
   span {
     background-color: var(--green);
@@ -53,4 +53,9 @@ h4,
 h5,
 h6 {
   color: var(--white) !important;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-light-1);
 }

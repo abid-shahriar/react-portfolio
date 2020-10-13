@@ -1,0 +1,62 @@
+.projects {
+  .projects-container {
+    @include flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    .project {
+      flex-basis: 31%;
+      text-align: center;
+      margin-top: 4rem;
+
+      @media (max-width: 700px) {
+        flex-basis: 100%;
+      }
+
+      padding: 2rem;
+      @include boxshadow;
+
+      img {
+        width: 100%;
+      }
+
+      .desc {
+        h3 {
+          font-size: 2.5rem;
+          text-transform: capitalize;
+          margin-top: 1rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          font-weight: 300;
+
+          &:nth-child(3) {
+            margin: 2rem 0;
+          }
+        }
+      }
+
+      .btns {
+        @include flexbox;
+        justify-content: space-evenly;
+        margin-top: 4rem;
+
+        a {
+          display: inline-block;
+          font-size: 1.6rem;
+          border: 2px solid var(--sayan);
+          padding: 0.5rem 2rem;
+          border-radius: 10px;
+          transition: 0.25s;
+
+          &:hover {
+            background-color: var(--green);
+            border-color: var(--green);
+          }
+        }
+      }
+    }
+  }
+}

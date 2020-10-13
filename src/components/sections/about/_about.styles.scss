@@ -7,9 +7,9 @@
     // align-items: flex-start;
     flex-direction: row-reverse;
 
-    @media (max-width: 900px){
+    @media (max-width: 900px) {
       flex-direction: column-reverse;
-      justify-content: center;    
+      justify-content: center;
     }
   }
 
@@ -18,7 +18,7 @@
     padding: 2rem;
     border-radius: 5px;
     @include boxshadow;
-    
+
     h2 {
       font-size: clamp(2.3rem, 5vw, 2.5rem);
       font-weight: 400;
@@ -29,10 +29,6 @@
       font-size: 1.5rem;
       font-weight: 300;
       color: var(--white-light-1);
-       @media (max-width:1400px ){
-          font-size: 1.3rem;
-      }
-      
     }
   }
 
@@ -53,17 +49,15 @@
       width: 50%;
       margin: 1rem 0;
 
-      
-
-      p{
+      p {
         display: flex;
         @media (max-width: 1430px) {
           flex-direction: column;
         }
 
         span {
-          font-weight: 300;      
-        
+          font-weight: 300;
+
           &:nth-child(1) {
             font-weight: 400;
             font-family: "Roboto Slab", serif;
@@ -73,7 +67,7 @@
           &:nth-child(2) {
             padding-left: 5px;
             font-size: 1.6rem;
-            
+
             @media (max-width: 1430px) {
               padding-left: 0px;
             }
@@ -88,8 +82,6 @@
           }
         }
       }
-
-      
     }
   }
 
@@ -116,8 +108,6 @@
       font-size: 2.5rem;
       margin-bottom: 2rem;
       font-weight: 400;
-
-      
     }
 
     .years {
@@ -132,7 +122,6 @@
         font-weight: 200;
         font-size: 1.6rem;
         color: var(--white);
-        
 
         &::before {
           content: "";
@@ -151,16 +140,13 @@
         margin-bottom: 0.5rem;
         color: var(--white);
 
-        @media (max-width:1400px ){
+        @media (max-width: 1400px) {
           font-size: 1.6rem;
         }
       }
       p {
         font-size: 1.5rem;
         font-weight: 300;
-        @media (max-width:1400px ){
-          font-size: 1.3rem;
-        }
       }
     }
   }
@@ -201,12 +187,12 @@
       border-radius: 50px;
       transition: 0.25s;
 
-      @media(max-width:1400px){
+      @media (max-width: 1400px) {
         font-size: 1.4rem;
         padding: 1rem 2rem;
       }
 
-      @media(max-width:500px){
+      @media (max-width: 500px) {
         font-size: 1rem;
         padding: 1rem 1.5rem;
       }

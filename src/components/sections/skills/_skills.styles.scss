@@ -1,5 +1,4 @@
 .skills {
-
   &__container {
     @include flexbox();
     flex-wrap: wrap;
@@ -13,13 +12,12 @@
       @include boxshadow;
       position: relative;
 
-      @media (max-width:900px){
+      @media (max-width: 900px) {
         flex-basis: 48%;
       }
 
-      @media (max-width:600px){
+      @media (max-width: 600px) {
         flex-basis: 100%;
-        
       }
 
       .icon {
@@ -52,13 +50,13 @@
         font-size: 1.6rem;
         font-weight: 300;
         text-align: center;
-        
-        @media (max-width:900px){
-          text-align: left !important;    
+
+        @media (max-width: 900px) {
+          text-align: left !important;
         }
 
-        @media (max-width:600px){
-          text-align: center !important;    
+        @media (max-width: 600px) {
+          text-align: center !important;
         }
       }
     }

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 
-
 function Nav(props) {
   let locationPath = props.location.pathname;
 
@@ -46,11 +45,13 @@ function Nav(props) {
 
   const handelToggle = (e) => {
     props.setToggle(!props.Toggle);
-  }
+  };
 
   return (
-    <nav id="nav" className={props.Toggle ? 'toggle nav' : 'nav'}>
-      <div className='toggle-btn' onClick={handelToggle}><i className="fas fa-sort-up"></i></div>
+    <nav id="nav" className={props.Toggle ? "toggle nav" : "nav"}>
+      <div className="toggle-btn" onClick={handelToggle}>
+        <i className="fas fa-sort-up"></i>
+      </div>
       <div className="logo-wrapper">
         <p>Abid Sh</p>
       </div>
@@ -61,7 +62,7 @@ function Nav(props) {
             className={locationPath === item.to ? "active-nav" : ""}
             key={item.id}
           >
-            <Link to={item.to} >
+            <Link to={item.to}>
               <i className={item.icon}></i>
               {item.name}
             </Link>

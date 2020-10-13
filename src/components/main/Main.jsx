@@ -5,18 +5,20 @@ import Blogs from "../sections/blogs/Blogs";
 import Contact from "../sections/contact/Contact";
 import Projects from "../sections/projects/Projects";
 import Skills from "../sections/skills/Skills";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
-function Main(props) {
+function Main() {
   return (
-    <main id="main" >
-      <Route path="/" exact component={Home} />
-      <Route path="/about" exact component={About} />
-      <Route path="/blogs" exact component={Blogs} />
-      <Route path="/contact" exact component={Contact} />
-      <Route path="/projects" exact component={Projects} />
-      <Route path="/skills" exact component={Skills} />
-    </main >
+    <main id="main">
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/blogs" component={Blogs} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/skills" component={Skills} />
+      </Switch>
+    </main>
   );
 }
 

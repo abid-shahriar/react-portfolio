@@ -9,9 +9,23 @@
       flex-basis: 31%;
       text-align: center;
       margin-top: 4rem;
+      min-height: 480px;
+      position: relative;
+      @include flexbox(column);
+      justify-content: stretch;
+
+      @media (max-width: 1200px) {
+        min-height: 460px;
+      }
+
+      @media (max-width: 900px) {
+        flex-basis: 48%;
+        min-height: 490px;
+      }
 
       @media (max-width: 700px) {
         flex-basis: 100%;
+        min-height: auto;
       }
 
       padding: 2rem;
@@ -21,7 +35,14 @@
         width: 100%;
       }
 
+      .desc-and-btns {
+        @include flexbox(column);
+        justify-content: flex-start;
+      }
+
       .desc {
+        @include flexbox(column);
+
         h3 {
           font-size: 2.5rem;
           text-transform: capitalize;
@@ -41,7 +62,14 @@
       .btns {
         @include flexbox;
         justify-content: space-evenly;
-        margin-top: 4rem;
+        margin-top: 2rem;
+
+        @media (min-width: 700px) {
+          position: absolute;
+          bottom: 2rem;
+          left: 50%;
+          transform: translateX(-50%);
+        }
 
         a {
           display: inline-block;
@@ -50,6 +78,12 @@
           padding: 0.5rem 2rem;
           border-radius: 10px;
           transition: 0.25s;
+
+          @media (min-width: 700px) {
+            &:first-child {
+              margin-right: 2rem;
+            }
+          }
 
           &:hover {
             background-color: var(--green);

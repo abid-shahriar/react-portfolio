@@ -3,10 +3,10 @@
     @include flexbox();
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: stretch;
     & > div {
       flex-basis: 32%;
       margin-top: 4rem;
-      min-height: 232px;
       @include flexbox(column);
       padding: 2rem;
       @include boxshadow;
@@ -49,7 +49,7 @@
       p {
         font-size: 1.6rem;
         font-weight: 300;
-        text-align: center;
+        text-align: left;
 
         @media (max-width: 900px) {
           text-align: left !important;
@@ -77,7 +77,7 @@
     & > div:nth-child(6),
     & > div:nth-child(9) {
       p {
-        text-align: right;
+        text-align: left;
       }
     }
   }

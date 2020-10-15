@@ -84,6 +84,9 @@
     padding: 0 3rem;
     list-style: none;
     font-size: 2rem;
+    @include flexbox(column);
+    align-items: stretch;
+    justify-content: space-evenly;
 
     li {
       @include boxshadow2;

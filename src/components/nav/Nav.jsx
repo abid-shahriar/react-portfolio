@@ -52,9 +52,9 @@ function Nav(props) {
       <div className="toggle-btn" onClick={handelToggle}>
         <i className="fas fa-sort-up"></i>
       </div>
-      <div className="logo-wrapper">
+      {/* <div className="logo-wrapper">
         <p>Abid Sh</p>
-      </div>
+      </div> */}
 
       <ul className="nav-menu">
         {navItems.map((item) => (

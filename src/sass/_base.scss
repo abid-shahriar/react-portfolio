@@ -22,13 +22,13 @@ html {
 body {
   overflow: hidden;
   color: var(--white-light-1);
-  background-color: #0e0e0e;
+  background: linear-gradient(90deg, var(--dark-1) 50%, var(--dark-2) 50%);
   font-family: "Roboto Slab", serif;
   scroll-behavior: smooth;
 }
 
 #root {
-  max-width: 1500px;
+  max-width: 2000px;
   margin: 0 auto;
   background-color: var(--dark-2);
   @include flexbox;

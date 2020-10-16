@@ -1,0 +1,26 @@
+.blogs {
+  .section-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+  .blogs-container {
+    @include flexbox;
+    flex-grow: 1;
+
+    .failure-message {
+      @include boxshadow;
+      padding: 4rem;
+      text-align: center;
+
+      p {
+        font-size: 2.5rem;
+
+        &:first-child {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

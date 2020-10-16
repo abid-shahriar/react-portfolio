@@ -1,0 +1,121 @@
+.contact {
+  .contact-form {
+    width: 100%;
+    margin-top: 4rem;
+
+    form {
+      & > div {
+        position: relative;
+        margin-bottom: 4rem;
+
+        @media (max-width: 600px) {
+          margin-bottom: 2rem;
+        }
+      }
+      label {
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        transform: translateY(-50%);
+        color: var(--sayan);
+        font-size: 1.8rem;
+        font-family: inherit;
+        display: none;
+
+        &[for="message"] {
+          top: 2rem;
+          transform: translateY(0%);
+        }
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 2rem;
+        color: var(--white-1);
+        appearance: none;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        @include boxshadow;
+        font-size: 1.8rem;
+        font-family: inherit;
+
+        @media (max-width: 700px) {
+          font-size: 1.4rem;
+        }
+
+        &::placeholder {
+          text-transform: capitalize;
+
+          @media (max-width: 700px) {
+            font-size: 1.4rem;
+          }
+        }
+      }
+
+      input {
+        height: 5rem;
+      }
+
+      textarea {
+        height: 40rem;
+
+        @media (max-width: 700px) {
+          height: 20rem;
+        }
+      }
+
+      .submit-and-email {
+        width: 100%;
+        margin: 0 auto;
+        @include flexbox;
+        justify-content: space-between;
+
+        @media (max-width: 500px) {
+          flex-direction: column;
+        }
+
+        span {
+          font-size: 1.8rem;
+        }
+
+        button,
+        a {
+          display: inline-block;
+          appearance: none;
+          outline: none;
+          border: none;
+          padding: 1.2rem 0;
+          text-decoration: none;
+          background-color: transparent;
+          border: 1px solid var(--sayan);
+          font-size: 2rem;
+          transition: 0.25s;
+          color: var(--white-1);
+          cursor: pointer;
+          border-radius: 10px;
+          width: 45%;
+
+          @media (max-width: 700px) {
+            font-size: 1.4rem;
+            padding: 1rem 0;
+          }
+
+          @media (max-width: 500px) {
+            width: 80%;
+          }
+
+          &:hover {
+            background-color: var(--green);
+            border: 2px solid var(--green);
+          }
+        }
+      }
+
+      a {
+        text-align: center;
+      }
+    }
+  }
+}

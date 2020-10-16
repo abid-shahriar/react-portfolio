@@ -15,23 +15,31 @@ function Home() {
       </div>
       <div className="home__social-links">
         <a
-          href="https://facebook.com"
+          href="https://facebook.com/abid.sh.akash"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i className="fab fa-facebook-f"></i>
         </a>
         <a
-          href="https://instagram.com"
+          href="https://instagram.com/find.abid"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i className="fab fa-instagram-square"></i>
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-twitter"></i>
+        <a
+          href="https://linkedin.com/in/abidshahriar/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-linkedin"></i>
         </a>
-        <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/abid-shahriar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fab fa-github-square"></i>
         </a>
       </div>

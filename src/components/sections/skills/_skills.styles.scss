@@ -49,39 +49,31 @@
       p {
         font-size: 1.6rem;
         font-weight: 300;
-        text-align: left;
-
-        @media (max-width: 900px) {
-          text-align: left !important;
-        }
-
-        @media (max-width: 600px) {
-          text-align: center !important;
-        }
+        text-align: center;
       }
     }
   }
 }
 
-.skills {
-  &__container {
-    & > div:nth-child(1),
-    & > div:nth-child(4),
-    & > div:nth-child(7) {
-      p {
-        text-align: left;
-      }
-    }
+// .skills {
+//   &__container {
+//     & > div:nth-child(1),
+//     & > div:nth-child(4),
+//     & > div:nth-child(7) {
+//       p {
+//         text-align: left;
+//       }
+//     }
 
-    & > div:nth-child(3),
-    & > div:nth-child(6),
-    & > div:nth-child(9) {
-      p {
-        text-align: left;
-      }
-    }
-  }
-}
+//     & > div:nth-child(3),
+//     & > div:nth-child(6),
+//     & > div:nth-child(9) {
+//       p {
+//         text-align: left;
+//       }
+//     }
+//   }
+// }
 
 .html {
   i {

@@ -7,7 +7,7 @@ function Contact() {
       <div className="section-wrapper">
         <Title title="send me a message" />
         <div className="contact-form">
-          <form name="port-contact" method="post">
+          <form name="port-contact" method="post" autoComplete="off">
             <input type="hidden" name="form-name" value="port-contact" />
 
             <div className="name-box">

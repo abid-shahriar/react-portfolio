@@ -7,7 +7,7 @@ function Contact() {
       <div className="section-wrapper">
         <Title title="send me a message" />
         <div className="contact-form">
-          <form action="">
+          <form name="contact" action="POST" netlify>
             <div className="name-box">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" placeholder="name" required />

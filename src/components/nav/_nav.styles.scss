@@ -7,6 +7,10 @@
   justify-content: space-around;
   transition: 0.5s;
 
+  @media (max-width: 700px) {
+    justify-content: center;
+  }
+
   .toggle-btn {
     display: none;
 
@@ -31,7 +35,7 @@
     backdrop-filter: blur(20px);
 
     @supports not (backdrop-filter: blur()) {
-      background-color: rgba(65, 65, 65, 0.95);
+      background-color: rgba(0, 0, 0, 0.9);
     }
 
     &.toggle {
@@ -63,21 +67,6 @@
     width: 80%;
   }
 
-  .logo-wrapper {
-    position: relative;
-
-    .logo {
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 8rem;
-      margin-top: 5rem;
-      height: 200px;
-      width: 200px;
-      position: relative;
-      z-index: 10;
-    }
-  }
-
   .nav-menu {
     flex-basis: 60%;
     text-align: start;
@@ -87,6 +76,10 @@
     @include flexbox(column);
     align-items: stretch;
     justify-content: space-evenly;
+
+    @media (max-width: 700px) {
+      margin-bottom: 4rem;
+    }
 
     li {
       @include boxshadow2;

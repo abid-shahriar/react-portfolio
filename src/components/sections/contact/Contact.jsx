@@ -8,6 +8,7 @@ function Contact() {
         <Title title="send me a message" />
         <div className="contact-form">
           <form name="contact" action="POST" netlify>
+            <input type="hidden" name="form-name" value="contact" />
             <div className="name-box">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" placeholder="name" required />

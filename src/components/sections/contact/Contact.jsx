@@ -7,8 +7,9 @@ function Contact() {
       <div className="section-wrapper">
         <Title title="send me a message" />
         <div className="contact-form">
-          <form name="contact" action="POST">
-            <input type="hidden" name="form-name" value="contact" />
+          <form name="port-contact" method="post">
+            <input type="hidden" name="form-name" value="port-contact" />
+
             <div className="name-box">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" placeholder="name" required />

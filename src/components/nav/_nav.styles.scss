@@ -86,6 +86,13 @@
       padding: 0 2rem;
       border-radius: 10px;
       transition: 0.3s;
+
+      @media (max-width: 700px) {
+        @supports not (backdrop-filter: blur()) {
+          box-shadow: none;
+        }
+      }
+
       &:not(:last-child) {
         margin-bottom: 1rem;
       }
@@ -146,6 +153,12 @@
 
 #nav li.active-nav {
   @include boxshadow;
+
+  @media (max-width: 700px) {
+    @supports not (backdrop-filter: blur()) {
+      box-shadow: none;
+    }
+  }
 
   a {
     color: var(--green);

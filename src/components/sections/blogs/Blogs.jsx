@@ -9,7 +9,7 @@ function Blogs() {
         <div className="blogs-container">
           <div className="failure-message">
             <p>Pursuing the path...</p>
-            <p>Hoping for the best..!!</p>
+            <p>Hoping to succeed soon..!!</p>
           </div>
         </div>
       </div>

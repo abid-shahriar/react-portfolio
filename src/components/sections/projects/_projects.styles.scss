@@ -58,7 +58,7 @@
           display: inline-block;
           font-size: 1.4rem;
           border: 2px solid var(--sayan);
-          padding: 0.5rem 2rem;
+          padding: 0.5rem 1rem;
           border-radius: 10px;
           transition: 0.25s;
 
@@ -69,6 +69,10 @@
           &:hover {
             background-color: var(--green);
             border-color: var(--green);
+          }
+
+          i {
+            margin-right: 1rem;
           }
         }
       }

@@ -12,10 +12,12 @@ function Project({ src, title, responsiveness, children, code, demo }) {
         </div>
         <div className="btns">
           <a href={code} target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github-alt"></i>
             Code
           </a>
           <a href={demo} target="_blank" rel="noopener noreferrer">
-            Demo
+            <i class="far fa-eye"></i>
+            Live
           </a>
         </div>
       </div>

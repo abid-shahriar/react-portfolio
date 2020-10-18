@@ -7,7 +7,7 @@ function Skill({ name, children, icon }) {
         <i className={icon}></i>
       </div>
       <h3>{name}</h3>
-      <p>{children}</p>
+      <div className="sub-skills">{children}</div>
     </div>
   );
 }

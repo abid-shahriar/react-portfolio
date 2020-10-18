@@ -25,3 +25,13 @@
     transform: translateX(2px);
   }
 }
+
+@keyframes navAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-92%);
+  }
+}

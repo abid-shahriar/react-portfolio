@@ -41,6 +41,7 @@
     &.toggle {
       transform: translateX(-92%);
       overflow-y: hidden;
+      animation: navAnimation 0.5s ease-in-out backwards;
     }
 
     .toggle-btn {

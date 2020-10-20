@@ -85,7 +85,7 @@
     li {
       @include boxshadow2;
       padding: 0 2rem;
-      border-radius: 10px;
+      border-radius: 5px;
       transition: 0.3s;
 
       @media (max-width: 700px) {

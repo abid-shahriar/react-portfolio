@@ -7,36 +7,30 @@ function Nav(props) {
   const navItems = [
     {
       id: 1,
-      name: "home",
-      icon: "nav-icon fas fa-home",
+      name: "about",
+      icon: "nav-icon fas fa-user-alt",
       to: "/",
     },
     {
       id: 2,
-      name: "about",
-      icon: "nav-icon fas fa-user-alt",
-      to: "/about",
-    },
-    {
-      id: 3,
       name: "skills",
       icon: "nav-icon fas fa-cogs",
       to: "/skills",
     },
     {
-      id: 4,
+      id: 3,
       name: "projects",
       icon: "nav-icon fas fa-briefcase",
       to: "/projects",
     },
     {
-      id: 5,
+      id: 4,
       name: "blogs",
       icon: "nav-icon fas fa-comment-dots",
       to: "/blogs",
     },
     {
-      id: 6,
+      id: 5,
       name: "contact",
       icon: "nav-icon fas fa-id-card",
       to: "/contact",

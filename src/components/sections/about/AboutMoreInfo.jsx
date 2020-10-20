@@ -1,5 +1,5 @@
 import React from "react";
-import AboutButtons from "./AboutButtons";
+import StayConnected from "./StayConnected";
 
 function AboutMoreInfo() {
   return (
@@ -47,7 +47,7 @@ function AboutMoreInfo() {
           </p>
         </div>
       </div>
-      <AboutButtons />
+      <StayConnected />
     </div>
   );
 }

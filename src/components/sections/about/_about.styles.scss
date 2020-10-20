@@ -18,17 +18,41 @@
     padding: 2rem;
     border-radius: 5px;
     @include boxshadow;
+    @include flexbox;
+    justify-content: space-evenly;
 
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 400;
-      margin-bottom: 0.5rem;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      text-align: center;
     }
 
-    p {
-      font-size: 1.5rem;
-      font-weight: 300;
-      color: var(--white-light-1);
+    .img {
+      img {
+        height: 15rem;
+        margin-right: 3rem;
+        @media (max-width: 900px) {
+          border-radius: 50%;
+        }
+      }
+
+      @media (max-width: 900px) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    .info {
+      line-height: 2.5rem;
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: var(--white-light-1);
+      }
     }
   }
 
@@ -155,7 +179,7 @@
     width: 48%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     @media (max-width: 1555px) {
       width: 48%;
@@ -167,44 +191,127 @@
     }
   }
 
-  &__btns {
-    width: 100%;
-    height: 60%;
-    @include flexbox;
-    justify-content: space-evenly;
-    // @include boxshadow;
-    margin-top: 4rem;
+  .stay-connected {
+    @include flexbox(column);
+    align-items: flex-start;
+    @include boxshadow;
+    padding: 2rem;
 
-    a {
-      text-decoration: none;
-      appearance: none;
-      outline: none;
-      background-color: transparent;
-      border: 2px solid rgba(255, 255, 255, 0.3);
-      padding: 1.5rem 2.5rem;
-      color: var(--white);
-      font-size: 1.6rem;
-      border-radius: 50px;
-      transition: 0.25s;
+    @media (max-width: 900px) {
+      margin-top: 4rem;
+    }
 
-      @media (max-width: 1400px) {
-        font-size: 1.4rem;
-        padding: 1rem 2rem;
-      }
+    h3 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    .social-links {
+      margin-top: 4rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
 
       @media (max-width: 500px) {
-        font-size: 1rem;
-        padding: 1rem 1.5rem;
+        margin-top: 2rem;
       }
 
-      &:hover {
-        background-color: var(--green);
-        // border: 2px solid var(--green);
-      }
+      & > div {
+        a {
+          height: 60px;
+          width: 60px;
+          display: flex;
+          border: 2px solid var(--sayan);
+          border-radius: 50%;
+          padding: 2rem;
+          font-size: 1.6rem;
+          @include flexbox;
+          transition: 0.25s;
+          margin: 0 1rem;
 
-      &:active {
-        transform: scale(0.95);
+          @media (max-width: 500px) {
+            height: 50px;
+            width: 50px;
+            padding: 1.5rem;
+          }
+
+          i {
+            display: inline-block;
+            @include flexbox;
+            font-size: 2.8rem;
+
+            @media (max-width: 500px) {
+              font-size: 2.4rem;
+            }
+          }
+        }
       }
     }
+
+    .or {
+      margin: 4rem 0;
+      font-size: 1.6rem;
+      text-align: center;
+      width: 100%;
+
+      @media (max-width: 500px) {
+        margin: 2rem 0;
+      }
+    }
+
+    .send-message {
+      width: 100%;
+      @include flexbox;
+      a {
+        display: flex;
+        border: 1px solid var(--sayan);
+        padding: 1rem 2rem;
+        border-radius: 3px;
+        font-size: 1.6rem;
+        transition: 0.25s;
+
+        @media (max-width: 500px) {
+          font-size: 1.3rem;
+        }
+
+        &:hover {
+          background-color: var(--green);
+          border: 1px solid var(--green);
+        }
+      }
+    }
+  }
+}
+
+#fb {
+  a:hover {
+    background-color: #3b5998;
+    border: 1px solid #3b5998;
+  }
+}
+
+#insta {
+  a:hover {
+    background-color: #d62976;
+    border: 1px solid #d62976;
+  }
+}
+
+#ln {
+  a:hover {
+    background-color: #0e76a8;
+    border: 1px solid #0e76a8;
+  }
+}
+
+#gh {
+  a {
+    margin-right: 0rem;
+  }
+  a:hover {
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    color: black;
   }
 }

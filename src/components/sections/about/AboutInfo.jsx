@@ -5,7 +5,7 @@ function AboutInfo() {
   return (
     <div className="about__info">
       <div className="img">
-        <img src={myPic} alt="abid shahriar" />
+        <img src={myPic} alt="abid shahriar" height="150px" width="150px" />
       </div>
       <div className="info">
         <h2>I am Abid Shahriar,</h2>

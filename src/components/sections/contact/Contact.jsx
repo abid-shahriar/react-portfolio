@@ -34,7 +34,12 @@ function Contact() {
             <div className="submit-and-email">
               <button type="submit">Send Message</button>
               <span>or</span>
-              <a href="mailto: abidshahriar7@gmail.com">Send an Email</a>
+              <a
+                className="email-me-btn"
+                href="mailto: abidshahriar7@gmail.com"
+              >
+                Send an Email
+              </a>
             </div>
           </form>
         </div>

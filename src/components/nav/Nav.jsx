@@ -64,7 +64,13 @@ function Nav(props) {
       <div className="footer-text">
         <p>Visit my github profile</p>
 
-        <a href="https://github.com/abid-shahriar">Github</a>
+        <a
+          href="https://github.com/abid-shahriar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Github
+        </a>
       </div>
     </nav>
   );

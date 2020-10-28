@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Switch } from "react-router-dom";
+import Loading from "../fallbacks/Loading";
 
 const About = lazy(() => import("../sections/about/About"));
 const Blogs = lazy(() => import("../sections/blogs/Blogs"));
@@ -11,7 +12,7 @@ function Main() {
   return (
     <main id="main">
       <Switch>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loading />}>
           <Route path="/" exact component={About} />
           <Route path="/blogs" component={Blogs} />
           <Route path="/contact" component={Contact} />

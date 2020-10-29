@@ -1,6 +1,9 @@
 import React from "react";
 
 function Loading() {
+  setTimeout(() => {
+    return;
+  }, 1500);
   return (
     <div className="loading-container">
       <div className="loader1">

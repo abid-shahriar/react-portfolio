@@ -29,6 +29,7 @@ body {
 
 #root {
   max-width: 2000px;
+  min-height: 100vh;
   margin: 0 auto;
   background-color: var(--dark-2);
   @include flexbox;

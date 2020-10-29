@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Nav from "./components/nav/Nav";
 import Main from "./components/main/Main";
+import Loading from "./components/fallbacks/Loading";
 
 function App() {
   const [Toggle, setToggle] = useState(true);
+  const [Loaded, setLoaded] = useState(false);
 
   window.addEventListener("click", (e) => {
     if (!Toggle) {
@@ -24,12 +26,20 @@ function App() {
     }
   });
 
-  return (
-    <BrowserRouter>
-      <Nav Toggle={Toggle} setToggle={setToggle} />
-      <Main Toggle={Toggle} setToggle={setToggle} />
-    </BrowserRouter>
-  );
+  if (Loaded) {
+    return (
+      <BrowserRouter>
+        <Nav Toggle={Toggle} setToggle={setToggle} />
+        <Main Toggle={Toggle} setToggle={setToggle} />
+      </BrowserRouter>
+    );
+  } else {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 1000);
+
+    return <Loading />;
+  }
 }
 
 export default App;

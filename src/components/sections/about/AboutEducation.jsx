@@ -6,8 +6,8 @@ function AboutEducation() {
       <h2>Education</h2>
       <div className="education-years">
         <div className="school years">
-          <h4>2008--2016</h4>
-          <h3>Bogura Zilla School, Bogura</h3>
+          <h3>2008--2016</h3>
+          <h4>Bogura Zilla School, Bogura</h4>
           <p>
             I started my journey form Bogura Zilla School. I studied science in
             the school. Got my "Junior School Certificate(JSC)" with GPA
@@ -16,8 +16,8 @@ function AboutEducation() {
           </p>
         </div>
         <div className="college years">
-          <h4>2016--2018</h4>
-          <h3>Govt. Azizul Haque College, Bogura</h3>
+          <h3>2016--2018</h3>
+          <h4>Govt. Azizul Haque College, Bogura</h4>
           <p>
             After school I got myself admitted in the Govt. Azizul Haque
             college. I studied science here and got my "Higher Secondary
@@ -25,11 +25,11 @@ function AboutEducation() {
           </p>
         </div>
         <div className="vesity years">
-          <h4>2018--2018</h4>
-          <h3>
+          <h3>2018--2018</h3>
+          <h4>
             Bangabandhu Sheikh Mujibur Rahman Science & Technology University,
             Gopalganj
-          </h3>
+          </h4>
           <p>
             Having my HSC Certificate, I took admissin in Bangabandhu Sheikh
             Mujibur Rahman Science & Technology University, Gopalganj. But I did
@@ -38,8 +38,8 @@ function AboutEducation() {
           </p>
         </div>
         <div className="drop-out years">
-          <h4>2018--Present</h4>
-          <h3>Udemy</h3>
+          <h3>2018--Present</h3>
+          <h4>Udemy</h4>
           <p>
             Afrer dropping out from the versity I started working on my web
             development skills. I started taking Udemy courses on html, css,

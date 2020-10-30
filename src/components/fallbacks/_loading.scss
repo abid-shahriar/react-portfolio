@@ -9,7 +9,7 @@
 .loader1 {
   width: 200px;
   height: 200px;
-  background: #15121d;
+  background: black;
   position: absolute;
   border-radius: 50%;
   animation: rotate 2s linear infinite normal;
@@ -31,7 +31,7 @@
 .loader1 span {
   width: 190px;
   height: 190px;
-  background: #15121d;
+  background: black;
   position: absolute;
   top: 5px;
   left: 5px;
@@ -40,7 +40,7 @@
 .loader2 {
   width: 160px;
   height: 160px;
-  background: #15121d;
+  background: black;
   position: absolute;
   border-radius: 50%;
   animation: rotate 2s linear infinite reverse;
@@ -62,7 +62,7 @@
 .loader2 span {
   width: 150px;
   height: 150px;
-  background: #15121d;
+  background: black;
   position: absolute;
   top: 5px;
   left: 5px;

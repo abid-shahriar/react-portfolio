@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import Nav from "./components/nav/Nav";
 import Main from "./components/main/Main";
 import Loading from "./components/fallbacks/Loading";
@@ -28,10 +28,10 @@ function App() {
 
   if (Loaded) {
     return (
-      <BrowserRouter>
+      <>
         <Nav Toggle={Toggle} setToggle={setToggle} />
         <Main Toggle={Toggle} setToggle={setToggle} />
-      </BrowserRouter>
+      </>
     );
   } else {
     setTimeout(() => {
@@ -42,4 +42,4 @@ function App() {
   }
 }
 
-export default App;
+export default withRouter(App);

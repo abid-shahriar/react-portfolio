@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Switch } from "react-router-dom";
 import Loading from "../fallbacks/Loading";
+import ScrollToTop from "../ScrollToTop";
 
 const About = lazy(() => import("../sections/about/About"));
 const Blogs = lazy(() => import("../sections/blogs/Blogs"));
@@ -11,6 +12,7 @@ const Skills = lazy(() => import("../sections/skills/Skills"));
 function Main() {
   return (
     <main id="main">
+      <ScrollToTop />
       <Switch>
         <Suspense fallback={<Loading />}>
           <Route path="/" exact component={About} />

@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   background-color: var(--dark-2);
-  @include flexbox;
+  @include flexbox(column);
   flex-wrap: wrap;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   overflow-x: hidden;

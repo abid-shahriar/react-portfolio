@@ -24,12 +24,6 @@ function Nav(props) {
       to: "/projects",
     },
     {
-      id: 4,
-      name: "blogs",
-      icon: "nav-icon fas fa-comment-dots",
-      to: "/blogs",
-    },
-    {
       id: 5,
       name: "contact",
       icon: "nav-icon fas fa-id-card",
@@ -61,7 +55,7 @@ function Nav(props) {
         ))}
       </ul>
 
-      <div className="footer-text">
+      {/* <div className="footer-text">
         <p>Visit my github profile</p>
 
         <a
@@ -71,7 +65,7 @@ function Nav(props) {
         >
           Github
         </a>
-      </div>
+      </div> */}
     </nav>
   );
 }

@@ -1,7 +1,8 @@
 import React from "react";
-import AboutEducation from "./AboutEducation";
+
 import AboutInfo from "./AboutInfo";
-import AboutMoreInfo from "./AboutMoreInfo";
+
+import StayConnected from "./StayConnected";
 import Title from "../globals/Title";
 
 function About() {
@@ -10,10 +11,7 @@ function About() {
       <div className="section-wrapper">
         <Title title="about me" />
         <AboutInfo />
-        <div className="row">
-          <AboutMoreInfo />
-          <AboutEducation />
-        </div>
+        <StayConnected />
       </div>
     </div>
   );

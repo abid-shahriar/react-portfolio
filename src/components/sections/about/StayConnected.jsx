@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 function StayConnected() {
   return (
     <div className="stay-connected">
-      <h3>Stay Connected...</h3>
       <div className="social-links">
         <div id="fb">
           <a
@@ -43,7 +42,7 @@ function StayConnected() {
           </a>
         </div>
       </div>
-      <p className="or">Or</p>
+
       <div className="send-message">
         <Link to="/contact">Send a Direct Message</Link>
       </div>

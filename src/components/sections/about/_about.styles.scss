@@ -2,7 +2,6 @@
   .row {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 4rem;
     justify-content: space-between;
     // align-items: flex-start;
     flex-direction: row-reverse;
@@ -15,11 +14,11 @@
 
   &__info {
     color: var(--white);
-    padding: 2rem;
-    border-radius: 5px;
-    @include boxshadow;
     @include flexbox;
+    flex-direction: column;
     justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 2rem;
 
     @media (max-width: 900px) {
       flex-direction: column;
@@ -27,9 +26,17 @@
     }
 
     .img {
+      margin-bottom: 2rem;
+      @include boxshadow;
+      height: 17rem;
+      width: 17rem;
+      border-radius: 50%;
+      @include flexbox;
+
       img {
         height: 15rem;
-        margin-right: 3rem;
+        // margin-right: 3rem;
+        border-radius: 50%;
         @media (max-width: 900px) {
           border-radius: 50%;
         }
@@ -42,6 +49,10 @@
 
     .info {
       line-height: 2.5rem;
+      padding: 2rem;
+      width: 40%;
+      @include boxshadow;
+
       h2 {
         font-size: 2.5rem;
         font-weight: 400;
@@ -59,24 +70,20 @@
   .stay-connected {
     @include flexbox(column);
     align-items: flex-start;
-    @include boxshadow;
-    padding: 2rem;
+    width: 30%;
+    margin: 0 auto;
 
     @media (max-width: 900px) {
       margin-top: 4rem;
     }
 
-    h3 {
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-      font-weight: 400;
-    }
-
     .social-links {
-      margin-top: 4rem;
+      @include boxshadow;
+      padding: 2rem;
       width: 100%;
       display: flex;
       justify-content: space-evenly;
+      margin-bottom: 2rem;
 
       @media (max-width: 500px) {
         margin-top: 2rem;
@@ -84,8 +91,8 @@
 
       & > div {
         a {
-          height: 60px;
-          width: 60px;
+          height: 50px;
+          width: 50px;
           display: flex;
           border: 2px solid var(--sayan);
           border-radius: 50%;
@@ -94,6 +101,10 @@
           @include flexbox;
           transition: 0.25s;
           margin: 0 1rem;
+
+          &:hover {
+            transform: scale(1.1);
+          }
 
           @media (max-width: 500px) {
             height: 50px;
@@ -111,17 +122,6 @@
             }
           }
         }
-      }
-    }
-
-    .or {
-      margin: 4rem 0;
-      font-size: 1.6rem;
-      text-align: center;
-      width: 100%;
-
-      @media (max-width: 500px) {
-        margin: 2rem 0;
       }
     }
 
@@ -150,21 +150,21 @@
 }
 
 #fb {
-  a:hover {
+  a {
     background-color: #3b5998;
     border: 1px solid #3b5998;
   }
 }
 
 #insta {
-  a:hover {
+  a {
     background-color: #d62976;
     border: 1px solid #d62976;
   }
 }
 
 #ln {
-  a:hover {
+  a {
     background-color: #0e76a8;
     border: 1px solid #0e76a8;
   }
@@ -174,7 +174,7 @@
   a {
     margin-right: 0rem;
   }
-  a:hover {
+  a {
     background-color: whitesmoke;
     border: 1px solid whitesmoke;
     color: black;

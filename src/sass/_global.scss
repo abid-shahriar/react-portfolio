@@ -39,7 +39,8 @@
 }
 
 .section-wrapper {
-  padding: 5rem 0;
+  @include flexbox(column);
+  min-height: calc(100vh - 7rem);
 
   @media (max-width: 700px) {
     padding: 5rem 0 10rem 0;

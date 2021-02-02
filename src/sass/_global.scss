@@ -30,17 +30,18 @@
 .section {
 	width: 90%;
 	margin: 0 auto;
-	min-height: 100vh;
+	min-height: calc(100vh - 6rem);
 	animation: sectionChange 1s ease-in-out;
 }
 
 .section-wrapper {
 	@include flexbox(column);
-	min-height: calc(100vh - 7rem);
-	padding: 5rem 0 15rem;
+	justify-content: flex-start;
+	min-height: calc(100vh - 6rem);
+	padding: 5rem 0;
 
 	@media (max-width: 700px) {
-		padding: 5rem 0 10rem 0;
+		padding: 5rem 0;
 	}
 }
 

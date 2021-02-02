@@ -1,39 +1,43 @@
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 :root {
-  --dark-1: #35363a;
-  --dark-2: #262728;
-  --white: #f0f0f0;
-  --white-light-1: #dedede;
-  --green: crimson;
-  --sayan: rgb(112, 112, 112);
+	--dark-1: #35363a;
+	--dark-2: #262728;
+	--white: #f0f0f0;
+	--white-light-1: #dedede;
+	--green: crimson;
+	--sayan: rgb(112, 112, 112);
 }
 
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
+
+	@media (min-width: 1300px) {
+		font-size: 70%;
+	}
 }
 
 body {
-  overflow: hidden;
-  color: var(--white-light-1);
-  background: linear-gradient(90deg, var(--dark-1) 50%, var(--dark-2) 50%);
-  font-family: "Roboto Slab", serif;
-  scroll-behavior: smooth;
+	overflow: hidden;
+	color: var(--white-light-1);
+	background: linear-gradient(90deg, var(--dark-1) 50%, var(--dark-2) 50%);
+	font-family: 'Roboto Slab', serif;
+	scroll-behavior: smooth;
 }
 
 #root {
-  max-width: 2000px;
-  min-height: 100vh;
-  margin: 0 auto;
-  background-color: var(--dark-2);
-  @include flexbox(column);
-  flex-wrap: wrap;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  overflow-x: hidden;
+	max-width: 1300px;
+	min-height: 100vh;
+	margin: 0 auto;
+	background-color: var(--dark-2);
+	@include flexbox(column);
+	flex-wrap: wrap;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+	overflow-x: hidden;
 }

@@ -26,7 +26,7 @@ html {
 body {
 	overflow: hidden;
 	color: var(--white-light-1);
-	background: linear-gradient(90deg, var(--dark-1) 50%, var(--dark-2) 50%);
+	background: linear-gradient(90deg, var(--dark-2) 50%, var(--dark-2) 50%);
 	font-family: 'Roboto Slab', serif;
 	scroll-behavior: smooth;
 }
@@ -38,6 +38,6 @@ body {
 	background-color: var(--dark-2);
 	@include flexbox(column);
 	flex-wrap: wrap;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 	overflow-x: hidden;
 }

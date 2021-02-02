@@ -1,121 +1,121 @@
 .skills {
-  &__container {
-    @include flexbox();
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    & > div {
-      flex-basis: 30%;
-      margin-top: 4rem;
-      @include flexbox(column);
-      @include boxshadow;
-      position: relative;
-      z-index: 11;
-      overflow: hidden;
+	&__container {
+		@include flexbox();
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: stretch;
+		& > div {
+			flex-basis: 30%;
+			margin-top: 2rem;
+			@include flexbox(column);
+			@include boxshadow;
+			position: relative;
+			z-index: 11;
+			overflow: hidden;
 
-      @media (max-width: 900px) {
-        flex-basis: 48%;
-      }
+			@media (max-width: 900px) {
+				flex-basis: 48%;
+			}
 
-      @media (max-width: 600px) {
-        flex-basis: 100%;
-      }
+			@media (max-width: 600px) {
+				flex-basis: 100%;
+			}
 
-      .icon {
-        i {
-          font-size: 7rem;
-          margin-bottom: 1rem;
-          margin-top: 2rem;
-          position: relative;
-          opacity: 0.7;
-          transform: scale(1.5);
-          position: absolute;
-          right: 10%;
-          bottom: 20px;
-          opacity: 0.5;
-          z-index: 1;
-        }
-      }
+			.icon {
+				i {
+					font-size: 7rem;
+					margin-bottom: 1rem;
+					margin-top: 2rem;
+					position: relative;
+					opacity: 0.7;
+					transform: scale(1.5);
+					position: absolute;
+					right: 10%;
+					bottom: 20px;
+					opacity: 0.5;
+					z-index: 1;
+				}
+			}
 
-      h3 {
-        font-size: 2.5rem;
-        text-transform: uppercase;
-        margin-bottom: 1.5rem;
-        font-weight: 400;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        opacity: 0.7;
-      }
+			h3 {
+				font-size: 1.8rem;
+				text-transform: uppercase;
+				margin-bottom: 1.5rem;
+				font-weight: 400;
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				opacity: 0.7;
+			}
 
-      p {
-        font-size: 1.6rem;
-        font-weight: 300;
-        text-align: center;
-      }
-    }
-  }
+			p {
+				font-size: 1.4rem;
+				font-weight: 300;
+				text-align: center;
+			}
+		}
+	}
 }
 
 .sub-skills {
-  @include flexbox(column);
-  align-items: flex-start;
-  width: 100%;
-  position: relative;
-  z-index: 12;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 3rem;
-  padding-top: 7rem;
+	@include flexbox(column);
+	align-items: flex-start;
+	width: 100%;
+	position: relative;
+	z-index: 12;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 3rem;
+	padding-top: 7rem;
 }
 
 .html {
-  i {
-    color: crimson;
-  }
+	i {
+		color: crimson;
+	}
 }
 
 .css {
-  i {
-    color: rgb(40, 98, 233);
-  }
+	i {
+		color: rgb(40, 98, 233);
+	}
 }
 
 .js {
-  i {
-    color: yellow;
-  }
+	i {
+		color: yellow;
+	}
 }
 
 .react {
-  i {
-    color: rgb(94, 211, 243);
-  }
+	i {
+		color: rgb(94, 211, 243);
+	}
 }
 
 .node {
-  i {
-    color: rgb(60, 130, 59);
-  }
+	i {
+		color: rgb(60, 130, 59);
+	}
 }
 
 .wordpress {
-  i {
-    color: rgb(32, 113, 150);
-  }
+	i {
+		color: rgb(32, 113, 150);
+	}
 }
 .git {
-  i {
-    color: rgb(235, 77, 40);
-  }
+	i {
+		color: rgb(235, 77, 40);
+	}
 }
 .cpanel {
-  i {
-    color: rgb(247, 105, 43);
-    transform: scale(2);
-  }
+	i {
+		color: rgb(247, 105, 43);
+		transform: scale(2);
+	}
 }
 .cli {
-  i {
-    color: rgb(255, 255, 255);
-  }
+	i {
+		color: rgb(255, 255, 255);
+	}
 }

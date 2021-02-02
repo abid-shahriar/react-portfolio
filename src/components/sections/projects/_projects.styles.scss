@@ -3,6 +3,7 @@
 		@include flexbox;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		flex-grow: 1;
 
 		.project {
 			flex-basis: 31%;

@@ -1,4 +1,5 @@
 import React from 'react';
+import RouteChange from '../globals/RouteChange';
 import Skill from '../globals/Skill';
 import Title from '../globals/Title';
 
@@ -65,6 +66,8 @@ function Skills() {
 						<p>-Emmet</p>
 					</Skill>
 				</div>
+
+				<RouteChange next='Projects' prev='About' nextPath='/projects' prevPath='/' />
 			</div>
 		</div>
 	);

@@ -10,6 +10,7 @@
 		margin: 0 auto;
 		margin-top: 2rem;
 		@include flexbox;
+		flex-grow: 1;
 
 		@media (max-width: 1000px) {
 			width: 100%;

@@ -7,11 +7,6 @@
 	justify-content: space-around;
 	transition: 0.5s;
 
-	& ul.nav-menu {
-		width: 90%;
-		margin: 0 auto;
-	}
-
 	@media (max-width: 1100px) {
 		background-color: rgba(0, 0, 0, 0.2);
 		backdrop-filter: blur(20px);
@@ -19,7 +14,12 @@
 		top: 0;
 		z-index: 10000;
 		height: auto;
-		padding: 1rem 0rem;
+		padding: 0.5rem 0rem;
+
+		& ul.nav-menu {
+			width: 90%;
+			margin: 0 auto;
+		}
 
 		& .nav-menu .menu-items {
 			height: 0;
@@ -33,12 +33,14 @@
 			}
 
 			.toggle-btn {
-				p:nth-child(1),
-				p:nth-child(3) {
+				p:nth-child(1) {
 					width: 30px;
 				}
 				p:nth-child(2) {
 					width: 40px;
+				}
+				p:nth-child(3) {
+					width: 30px;
 				}
 			}
 		}
@@ -48,8 +50,6 @@
 		}
 
 		.toggle-btn {
-			margin: 1rem 0;
-
 			p {
 				margin: 7px 0;
 				height: 4px;
@@ -57,10 +57,17 @@
 				background-color: var(--green);
 				pointer-events: none;
 				transition: 0.5s;
+				border-radius: 50px;
 			}
 
+			p:nth-child(1) {
+				width: 40px;
+			}
 			p:nth-child(2) {
 				width: 30px;
+			}
+			p:nth-child(3) {
+				width: 40px;
 			}
 		}
 	}

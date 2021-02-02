@@ -9,20 +9,10 @@ function App() {
 	const [Loaded, setLoaded] = useState(false);
 
 	window.addEventListener('click', (e) => {
-		if (!Toggle) {
-			if (e.target.classList.contains('toggle-btn')) {
-				return;
-			} else {
-				setToggle(true);
-			}
-		}
-	});
-
-	window.addEventListener('swiped', (e) => {
-		if (e.detail.dir === 'right') {
+		if (e.target.classList.contains('toggle-btn')) {
+			return;
+		} else {
 			setToggle(false);
-		} else if (e.detail.dir === 'left') {
-			setToggle(true);
 		}
 	});
 

@@ -31,6 +31,16 @@
 				height: 25rem;
 				// overflow: hidden;
 			}
+
+			.toggle-btn {
+				p:nth-child(1),
+				p:nth-child(3) {
+					width: 30px;
+				}
+				p:nth-child(2) {
+					width: 40px;
+				}
+			}
 		}
 
 		@supports not (backdrop-filter: blur()) {
@@ -39,28 +49,21 @@
 
 		.toggle-btn {
 			margin: 1rem 0;
+
 			p {
 				margin: 7px 0;
 				height: 4px;
 				width: 40px;
 				background-color: var(--green);
 				pointer-events: none;
+				transition: 0.5s;
 			}
 
 			p:nth-child(2) {
 				width: 30px;
 			}
-			// animation: toggleBtn 2s ease-in-out infinite backwards;
 		}
 	}
-
-	// @media (max-width: 700px) {
-	//   width: 60%;
-	// }
-
-	// @media (max-width: 500px) {
-	//   width: 80%;
-	// }
 }
 
 .menu-items {
@@ -70,7 +73,7 @@
 	@include flexbox();
 	align-items: center;
 	justify-content: flex-end;
-	transition: 0.25s;
+	transition: 0.5s;
 
 	@media (max-width: 1100px) {
 		flex-direction: column;
@@ -144,12 +147,6 @@
 
 #nav li.active-nav {
 	// @include boxshadow;
-
-	@media (max-width: 700px) {
-		@supports not (backdrop-filter: blur()) {
-			box-shadow: none;
-		}
-	}
 
 	a {
 		color: var(--green);

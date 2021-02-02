@@ -26,7 +26,7 @@ function App() {
 	} else {
 		setTimeout(() => {
 			setLoaded(true);
-		}, 1000000);
+		}, 1000);
 
 		return <Loading />;
 	}

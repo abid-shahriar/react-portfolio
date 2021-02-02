@@ -1,54 +1,55 @@
-[class*="__title"] {
-  margin-bottom: 3rem;
-  h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    text-transform: capitalize;
-    font-weight: 400;
+[class*='__title'] {
+	width: 100%;
+	h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		text-transform: capitalize;
+		font-weight: 400;
 
-    @media (max-width: 600px) {
-      font-size: 3rem;
-    }
-  }
-  span {
-    background-color: var(--green);
-    height: 5px;
-    display: block;
-    margin-bottom: 8px;
-    border-radius: 50px;
+		@media (max-width: 600px) {
+			font-size: 3rem;
+		}
+	}
+	span {
+		background-color: var(--green);
+		height: 5px;
+		display: block;
+		margin-bottom: 8px;
+		border-radius: 50px;
 
-    &:nth-child(2) {
-      width: 100px;
-    }
+		&:nth-child(2) {
+			width: 100px;
+		}
 
-    &:last-child {
-      width: 50px;
-    }
-  }
+		&:last-child {
+			width: 50px;
+		}
+	}
 }
 
 .section {
-  width: 90%;
-  margin: 0 auto;
-  min-height: 100vh;
-  animation: sectionChange 1s ease-in-out;
+	width: 90%;
+	margin: 0 auto;
+	min-height: 100vh;
+	animation: sectionChange 1s ease-in-out;
 
-  @media (max-width: 900px) {
-    padding-left: 20px;
-  }
+	@media (max-width: 900px) {
+		padding-left: 20px;
+	}
 }
 
 .section-wrapper {
-  @include flexbox(column);
-  min-height: calc(100vh - 7rem);
+	@include flexbox(column);
+	min-height: calc(100vh - 7rem);
+	padding: 5rem 0 15rem;
 
-  @media (max-width: 700px) {
-    padding: 5rem 0 10rem 0;
-  }
+	@media (max-width: 700px) {
+		padding: 5rem 0 10rem 0;
+	}
 }
 
 p {
-  font-family: "Nunito", sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 
 h1,
@@ -57,10 +58,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--white) !important;
+	color: var(--white) !important;
 }
 
 a {
-  text-decoration: none;
-  color: var(--white-light-1);
+	text-decoration: none;
+	color: var(--white-light-1);
 }

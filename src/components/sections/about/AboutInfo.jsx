@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
-import myPic from '../../../asset/img/me.jpg';
+import { useHistory } from 'react-router-dom';
 
 const MotionAnimation = {
 	hidden: { opacity: 0, y: 20 },
@@ -15,10 +14,14 @@ const MotionAnimation = {
 };
 
 function AboutInfo() {
+	const history = useHistory();
+
 	return (
 		<motion.div className='about__info'>
 			<motion.div variants={MotionAnimation} className='img'>
-				<img src={myPic} alt='abid shahriar' height='150px' width='150px' />
+				<a href='https://abidshahriar.me/images/me.jpg'>
+					<img src='/images/me.jpg' alt='abid shahriar' height='150px' width='150px' />
+				</a>
 			</motion.div>
 			<motion.div variants={MotionAnimation} className='info'>
 				<h2>I am Abid Shahriar,</h2>

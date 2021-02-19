@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useHistory } from 'react-router-dom';
 
 import AboutInfo from './AboutInfo';
 import StayConnected from './StayConnected';
+import { useEffect } from 'react';
 
 const MotionContainer = {
 	hidden: { opacity: 0 },
@@ -26,6 +28,20 @@ const MotionAnimation = {
 };
 
 function About() {
+	const history = useHistory();
+
+	useEffect(() => {
+		const about = document.getElementById('about');
+
+		about.addEventListener('swiped', (e) => {
+			const swipeDir = e.detail.dir;
+
+			if (swipeDir === 'left') {
+				history.push('/skills');
+			}
+		});
+	}, [history]);
+
 	return (
 		<div className='section about' id='about'>
 			<motion.div variants={MotionContainer} initial='hidden' animate='show' className='section-wrapper'>

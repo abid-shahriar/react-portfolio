@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useHistory } from 'react-router-dom';
 
 import Title from '../globals/Title';
 
@@ -25,8 +26,21 @@ const MotionAnimation = {
 };
 
 function Contact() {
+	const history = useHistory();
+
+	useEffect(() => {
+		const about = document.getElementById('contact');
+
+		about.addEventListener('swiped', (e) => {
+			const swipeDir = e.detail.dir;
+
+			if (swipeDir === 'right') {
+				history.push('/projects');
+			}
+		});
+	}, [history]);
 	return (
-		<div className='section contact'>
+		<div className='section contact' id='contact'>
 			<div className='section-wrapper'>
 				<Title title='send me a message' />
 				<div className='contact-form'>

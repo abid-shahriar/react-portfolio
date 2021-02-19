@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useHistory } from 'react-router-dom';
 
 import Skill from '../globals/Skill';
 import Title from '../globals/Title';
@@ -15,8 +16,25 @@ const motionContainer = {
 };
 
 function Skills() {
+	const history = useHistory();
+
+	useEffect(() => {
+		const about = document.getElementById('skills');
+
+		about.addEventListener('swiped', (e) => {
+			const swipeDir = e.detail.dir;
+
+			if (swipeDir === 'right') {
+				history.push('/');
+			}
+			if (swipeDir === 'left') {
+				history.push('/projects');
+			}
+		});
+	}, [history]);
+
 	return (
-		<div className='section skills'>
+		<div className='section skills' id='skills'>
 			<div className='section-wrapper'>
 				<Title title='some of my skills' />
 

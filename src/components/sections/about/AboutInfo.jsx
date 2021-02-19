@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useHistory } from 'react-router-dom';
 
 const MotionAnimation = {
 	hidden: { opacity: 0, y: 20 },
@@ -14,8 +13,6 @@ const MotionAnimation = {
 };
 
 function AboutInfo() {
-	const history = useHistory();
-
 	return (
 		<motion.div className='about__info'>
 			<motion.div variants={MotionAnimation} className='img'>

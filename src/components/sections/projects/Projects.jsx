@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
 import Title from '../globals/Title';
 import Project from '../globals/Project';
 import analogClock from '../../../asset/img/analogClock.jpg';
@@ -9,13 +11,23 @@ import portfolio from '../../../asset/img/portfolio.jpg';
 import simplePhotoEditor from '../../../asset/img/simple-photo-editor.jpg';
 import RouteChange from '../globals/RouteChange';
 
+const ProjectMotionContainer = {
+	hidden: { opacity: 0 },
+	show: {
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.1
+		}
+	}
+};
+
 function Projects() {
 	return (
 		<div className='section projects'>
 			<div className='section-wrapper'>
 				<Title title='some of my projects' />
 
-				<div className='projects-container'>
+				<motion.div variants={ProjectMotionContainer} initial='hidden' animate='show' className='projects-container'>
 					<Project
 						src={analogClock}
 						title='analog clock'
@@ -63,7 +75,7 @@ function Projects() {
 						code='https://github.com/abid-shahriar/simple-photo-editor'
 						demo='https://abid-shahriar.github.io/simple-photo-editor/'
 					></Project>
-				</div>
+				</motion.div>
 
 				<RouteChange next='Contact' prev='Skills' nextPath='/contact' prevPath='/skills' />
 			</div>

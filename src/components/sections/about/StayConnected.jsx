@@ -1,9 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
+const MotionAnimation = {
+	hidden: { opacity: 0, y: 20 },
+	show: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 0.5
+		}
+	}
+};
 
 function StayConnected() {
 	return (
-		<div className='stay-connected'>
+		<motion.div variants={MotionAnimation} className='stay-connected'>
 			<div className='social-links'>
 				<div id='fb'>
 					<a href='https://facebook.com/abid.sh.akash' target='_blank' rel='noopener noreferrer'>
@@ -30,7 +42,7 @@ function StayConnected() {
 			<div className='send-message'>
 				<Link to='/contact'>send me a message</Link>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

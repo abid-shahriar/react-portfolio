@@ -78,6 +78,7 @@ a {
 	z-index: 1000;
 	padding: 5rem 0;
 	display: none;
+	transition: 0.3s;
 
 	@media (max-width: 1100px) {
 		display: block;

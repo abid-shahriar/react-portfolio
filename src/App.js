@@ -54,10 +54,10 @@ function App() {
 	if (Loaded) {
 		return (
 			<>
-				<div className='leftBtn' onClick={handleLeftBtn} style={{ color: `${location.pathname === '/' ? 'grey' : 'rgb(216, 216, 216)'}` }}>
+				<div className='leftBtn' onClick={handleLeftBtn} style={{ color: `${location.pathname === '/' ? '#555' : 'rgb(216, 216, 216)'}` }}>
 					<i className='fas fa-chevron-left'></i>
 				</div>
-				<div className='rightBtn' onClick={handleRightBtn} style={{ color: `${location.pathname === '/contact' ? 'grey' : 'rgb(216, 216, 216)'}` }}>
+				<div className='rightBtn' onClick={handleRightBtn} style={{ color: `${location.pathname === '/contact' ? '#555' : 'rgb(216, 216, 216)'}` }}>
 					<i className='fas fa-chevron-right'></i>
 				</div>
 				<Nav Toggle={Toggle} setToggle={setToggle} />

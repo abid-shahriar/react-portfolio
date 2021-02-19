@@ -36,8 +36,6 @@ function About() {
 				<motion.a variants={MotionAnimation} className='cv-btn' href='/abid-cv.pdf'>
 					Download CV
 				</motion.a>
-
-				<RouteChange next='Skills' nextPath='/skills' />
 			</motion.div>
 		</div>
 	);

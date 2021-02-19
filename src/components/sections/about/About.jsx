@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 
 import AboutInfo from './AboutInfo';
 import StayConnected from './StayConnected';
-import RouteChange from '../globals/RouteChange';
 
 const MotionContainer = {
 	hidden: { opacity: 0 },

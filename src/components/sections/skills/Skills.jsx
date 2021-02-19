@@ -1,8 +1,8 @@
 import React from 'react';
-import RouteChange from '../globals/RouteChange';
+import { motion } from 'framer-motion';
+
 import Skill from '../globals/Skill';
 import Title from '../globals/Title';
-import { motion } from 'framer-motion';
 
 const motionContainer = {
 	hidden: { opacity: 0 },
@@ -78,8 +78,6 @@ function Skills() {
 						<p>-Emmet</p>
 					</Skill>
 				</motion.div>
-
-				<RouteChange next='Projects' prev='About' nextPath='/projects' prevPath='/' />
 			</div>
 		</div>
 	);

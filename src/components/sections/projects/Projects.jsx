@@ -9,7 +9,6 @@ import foodOClock from '../../../asset/img/foodOClock.jpg';
 import todoApp from '../../../asset/img/todoApp.jpg';
 import portfolio from '../../../asset/img/portfolio.jpg';
 import simplePhotoEditor from '../../../asset/img/simple-photo-editor.jpg';
-import RouteChange from '../globals/RouteChange';
 
 const ProjectMotionContainer = {
 	hidden: { opacity: 0 },
@@ -76,8 +75,6 @@ function Projects() {
 						demo='https://abid-shahriar.github.io/simple-photo-editor/'
 					></Project>
 				</motion.div>
-
-				<RouteChange next='Contact' prev='Skills' nextPath='/contact' prevPath='/skills' />
 			</div>
 		</div>
 	);

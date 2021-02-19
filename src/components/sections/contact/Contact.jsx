@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import RouteChange from '../globals/RouteChange';
 import Title from '../globals/Title';
 
 const MotionContainer = {
@@ -57,8 +56,6 @@ function Contact() {
 						</motion.div>
 					</motion.form>
 				</div>
-
-				<RouteChange prev='Projects' prevPath='/projects' />
 			</div>
 		</div>
 	);

@@ -21,10 +21,13 @@ function AboutInfo() {
         </a>
       </motion.div>
       <motion.div variants={MotionAnimation} className='info'>
-        <h2>Abid Shahriar here,</h2>
+        <h2>
+          Abid Shahriar <span>here,</span>
+        </h2>
         <p>
-          I'm a 25 years old self-taught <span>Frontend Developer</span> based in Bangladesh. I like frontend because of the combination of design and
-          logic. Got 2+ years of experience. I like clean and reusable code and like to learn new skills.{' '}
+          I'm 24 years old and I'm from Bogura, Bangladesh. Self-taught creative <span>Frontend Developer</span> offering 2+ years of experience.
+          Skilled in designing, developing and testing multiple web-based applications incorporating a range of technologies. Aspiring to combine
+          broad background with strong technical skills to excel as a Frontend Developer.
         </p>
       </motion.div>
     </motion.div>

@@ -10,20 +10,20 @@ const Projects = lazy(() => import('../sections/projects/Projects'));
 const Skills = lazy(() => import('../sections/skills/Skills'));
 
 function Main() {
-	return (
-		<main id='main'>
-			<ScrollToTop />
-			<Switch>
-				<Suspense fallback={<Loading />}>
-					<Route path='/' exact component={About} />
-					<Route path='/blogs' component={Blogs} />
-					<Route path='/contact' component={Contact} />
-					<Route path='/projects' component={Projects} />
-					<Route path='/skills' component={Skills} />
-				</Suspense>
-			</Switch>
-		</main>
-	);
+  return (
+    <main id='main'>
+      <ScrollToTop />
+      <Switch>
+        <Suspense fallback={<Loading />}>
+          <Route path='/' exact component={About} />
+          <Route path='/blogs' component={Blogs} />
+          <Route path='/contact' component={Contact} />
+          <Route path='/projects' component={Projects} />
+          <Route path='/skills' component={Skills} />
+        </Suspense>
+      </Switch>
+    </main>
+  );
 }
 
 export default Main;

@@ -49,7 +49,7 @@ function About() {
 				<StayConnected />
 
 				<motion.a variants={MotionAnimation} className='cv-btn' href='/abid-cv.pdf'>
-					Download CV
+					Download Resume
 				</motion.a>
 			</motion.div>
 		</div>

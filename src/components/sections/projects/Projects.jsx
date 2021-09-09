@@ -40,11 +40,12 @@ function Projects() {
 
         <motion.div variants={ProjectMotionContainer} initial='hidden' animate='show' className='projects-container'>
           <Project
-            src='/images/oneTouch.png'
-            title='OneTouch Recruit'
-            responsiveness='full-responsive'
-            details='A recruitment production website built with html, css, scss, bootstrap, javascript and a small JS library called alpineJS.'
-            demo='https://onetouchrecruit.manaknightdigital.com/'
+            src='/images/puzzle-game.jpg'
+            title='Image Puzzle'
+            responsiveness='not supported on touch devices'
+            details='Puzzle game built with "HTML Drag and Drop API" built with pure HTML, CSS(SCSS), JavaScript(TypeScript). No library used. Have fun.'
+            code='https://github.com/abid-shahriar/puzzle-game'
+            demo='https://imagepuzzle.netlify.app/'
           ></Project>
 
           <Project

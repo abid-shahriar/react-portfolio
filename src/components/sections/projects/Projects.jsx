@@ -43,7 +43,7 @@ function Projects() {
             src='/images/puzzle-game.jpg'
             title='Image Puzzle'
             responsiveness='not supported on touch devices'
-            details='Puzzle game built with "HTML Drag and Drop API" built with pure HTML, CSS(SCSS), JavaScript(TypeScript). No library used. Have fun.'
+            details='Puzzle game built with HTML, CSS(SCSS), JavaScript(TypeScript). No extra library/framework used, Have fun.'
             code='https://github.com/abid-shahriar/puzzle-game'
             demo='https://imagepuzzle.netlify.app/'
           ></Project>

@@ -11,7 +11,7 @@
     "react-scripts": "^3.4.4"
   },
   "scripts": {
-    "dev": "PORT=1302 react-scripts start",
+    "dev": "set PORT=3006 && react-scripts start",
     "build": "react-scripts build"
   },
   "eslintConfig": {

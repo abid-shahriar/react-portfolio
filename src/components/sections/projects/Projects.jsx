@@ -40,12 +40,21 @@ function Projects() {
 
         <motion.div variants={ProjectMotionContainer} initial='hidden' animate='show' className='projects-container'>
           <Project
+            src='/images/cryptosphere.jpg'
+            title='Crypto Sphere'
+            responsiveness='full-responsive'
+            details='Build With NextJS with the help of Coinranking Api from RapidApi. Used ISR(Incremental Static Regeneration) and redux  for speed and performance.'
+            code='https://github.com/abid-shahriar/crypto-sphere'
+            demo='https://cryptosphere.netlify.app'
+          ></Project>
+
+          <Project
             src='/images/puzzle-game.jpg'
             title='Image Puzzle'
             responsiveness='not supported on touch devices'
             details='Puzzle game built with HTML, CSS(SCSS), JavaScript(TypeScript). No extra library/framework used, Have fun.'
             code='https://github.com/abid-shahriar/puzzle-game'
-            demo='https://imagepuzzle.netlify.app/'
+            demo='https://imagepuzzle.netlify.app'
           ></Project>
 
           <Project
@@ -54,17 +63,17 @@ function Projects() {
             responsiveness='full-responsive'
             details='Simple restaurant website built with html, css, scss, javascript, it is using api call to get the menu items'
             code='https://github.com/abid-shahriar/restaurant-website'
-            demo='https://food-o-clock.netlify.app/'
+            demo='https://food-o-clock.netlify.app'
           ></Project>
 
-          <Project
+          {/* <Project
             src='/images/portfolio.jpg'
             title='Static Portfolio'
             responsiveness='full-responsive'
             details='A simple static portfolio website built with html, css, scss, javascript.'
             code='https://github.com/abid-shahriar/portfolio'
-            demo='https://abid-shahriar.netlify.app/'
-          ></Project>
+            demo='https://abid-shahriar.netlify.app'
+          ></Project> */}
 
           <Project
             src='/images/css-position.jpg'
@@ -75,13 +84,21 @@ function Projects() {
             demo='https://abid-shahriar.github.io/react-css-position-gui'
           ></Project>
 
-          <Project
+          {/* <Project
             src='/images/todoApp.jpg'
             title='ToDo App'
             responsiveness='full-responsive'
             details='Simple ToDo app, built with html, css and vanilla javascript.'
             code='https://github.com/abid-shahriar/toDo-app'
-            demo='https://abid-shahriar.github.io/toDo-app/'
+            demo='https://abid-shahriar.github.io/toDo-app'
+          ></Project> */}
+          <Project
+            src='/images/wikiance.jpg'
+            title='wikiance'
+            responsiveness='full-responsive'
+            details='Portfolio website of the company I work for. Built with NextJS and Typescript. It is super fast and SEO friendly.'
+            // code='https://github.com/abid-shahriar/toDo-app'
+            demo='https://wikiance.com'
           ></Project>
 
           <Project
@@ -90,7 +107,7 @@ function Projects() {
             responsiveness='full-responsive'
             details='Photo editor tool to play with CSS filter property. Built with react and ContextApi.'
             code='https://github.com/abid-shahriar/simple-photo-editor'
-            demo='https://abid-shahriar.github.io/simple-photo-editor/'
+            demo='https://abid-shahriar.github.io/simple-photo-editor'
           ></Project>
         </motion.div>
       </div>

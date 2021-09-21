@@ -45,7 +45,7 @@ function Projects() {
             responsiveness='full-responsive'
             details='Build With NextJS with the help of Coinranking Api from RapidApi. Used ISR(Incremental Static Regeneration) and redux  for speed and performance.'
             code='https://github.com/abid-shahriar/crypto-sphere'
-            demo='https://cryptosphere.netlify.app'
+            demo='https://cryptosphere.vercel.app'
           ></Project>
 
           <Project
